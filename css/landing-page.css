@@ -43,7 +43,6 @@ header.masthead h1 {
 @media (min-width: 768px) {
   header.masthead {
     padding-top: 4rem;
-    padding-bottom: 12rem;
   }
   header.masthead h1 {
     font-size: 3rem;
@@ -58,6 +57,12 @@ header.masthead img {
   max-width: 100%;
 }
 
+.showcase {
+  color: white;
+  background-color: #192b6c;
+  padding-top: 4rem;
+}
+
 .showcase .showcase-text {
   padding: 3rem;
 }
@@ -67,13 +72,25 @@ header.masthead img {
   background-size: cover;
 }
 
+.showcase .card {
+  color: #000;
+}
+
 @media (min-width: 768px) {
   .showcase .showcase-text {
     padding: 7rem;
   }
+  .showcase .card {
+    max-width: 400px;
+  }
+}
+
+.showcase .card-columns {
+  column-count: 1;
 }
 
 .features-icons {
+  background-color: #fff;
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
@@ -110,28 +127,23 @@ header.masthead img {
 
 .call-to-action {
   position: relative;
-  background-color: #343a40;
-  background: url("../img/bg-masthead.jpg") no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-color: white;
   padding-top: 7rem;
   padding-bottom: 7rem;
 }
 
-.call-to-action .overlay {
-  position: absolute;
-  background-color: #212529;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
+.call-to-action i {
+  font-size: 2em;
+  vertical-align: middle;
+  padding-left: 5px;
 }
 
 footer.footer {
   padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.half_slider {
   padding-bottom: 4rem;
 }
 
@@ -175,4 +187,56 @@ footer.footer {
 
 .carousel-indicators .active {
   background-color: #444;
+}
+
+.press {
+  padding-bottom: 4rem;
+}
+
+.press .carousel-inner {
+  max-width: 800px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .press .carousel-inner {
+    max-width: 75%;
+    margin: auto;
+  }
+}
+
+.press .carousel-caption {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  color: white;
+  top: 0;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 20px;
+  width: 50%;
+  align: left;
+  background-color: rgba(25, 43, 108, 0.7);
+}
+
+.press .carousel-caption h3 {
+  font-size: .8em;
+}
+
+.press .carousel-caption a {
+  font-weight: bold;
+  color: #dee2e6;
+}
+
+@media (min-width: 768px) {
+  .press .carousel-caption h3 {
+    font-size: 2em;
+    background-color: #adb5bd;
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .press .carousel-caption p {
+    font-size: 2em;
+  }
 }
