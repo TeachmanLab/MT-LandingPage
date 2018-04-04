@@ -1,0 +1,5 @@
+.idea/
+node_modules/
+original/
+package-lock.json
+vendor/
