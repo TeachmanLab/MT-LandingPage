@@ -213,7 +213,6 @@ footer.footer {
   top: 0;
   vertical-align: middle;
   text-align: center;
-  padding-left: 20px;
   width: 50%;
   align: left;
   background-color: rgba(25, 43, 108, 0.7);
@@ -226,6 +225,7 @@ footer.footer {
 .press .carousel-caption a {
   font-weight: bold;
   color: #dee2e6;
+  font-size: 1.2em;
 }
 
 @media (min-width: 768px) {
@@ -233,7 +233,6 @@ footer.footer {
     font-size: 2em;
     background-color: #adb5bd;
     display: inline-block;
-    padding: 20px;
     margin-bottom: 40px;
   }
   .press .carousel-caption p {
