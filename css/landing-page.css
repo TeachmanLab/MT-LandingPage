@@ -1,15 +1,17 @@
+/********** GENERAL **********/
 body {
   font-family: 'Source Sans Pro', serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+h1 {
+  font-size: 50px;
   font-weight: 700;
+}
+
+@media(max-width: 767px) {
+  h1 {
+    font-size: 35px;
+  }
 }
 
 .white {
@@ -24,13 +26,38 @@ h6 {
   color: #008dd3;
 }
 
-.logo-blue-background {
-  background-color: #008dd3;
+.calm-thinking-btn {
+  background-color: #33bef2;
+  border-color: #33bef2;
+  color: #ffffff;
+  border-radius: 7px;
+}
+
+.calm-thinking-btn:hover {
+  background-color: #0084bc;
+  border-color: #0084bc;
 }
 
 .light-yellow {
   color: #fffac1;
 }
+
+.bg-dark {
+  background-color: #192b6c !important;
+}
+
+/********** NAV BAR **********/
+.logo-img {
+  height: 100px;
+}
+
+@media (max-width: 767px) {
+  .logo-img {
+    height: 65px;
+  }
+}
+
+/********** HERO BANNER/MASTHEAD **********/
 
 .hero-title {
   font-size: 80px;
@@ -41,20 +68,6 @@ h6 {
 
 .hero-text {
   font-size: 30px;
-}
-
-.bg-dark {
-  background-color: #192b6c !important;
-}
-
-.logo-img {
-  height: 100px;
-}
-
-@media (max-width: 768px) {
-  .logo-img {
-    height: 65px;
-  }
 }
 
 header.masthead {
@@ -75,7 +88,7 @@ header.masthead {
   background-color: #f4d44a;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   header.masthead {
     padding-top: 40px;
     height: 350px;
@@ -90,6 +103,7 @@ header.masthead {
   }
 }
 
+/********** CREDITS **********/
 .credits {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -98,6 +112,25 @@ header.masthead {
 .gray-sliver {
   height: 1px;
   background-color: lightgray;
+  margin-bottom: 30px;
+}
+
+/********** HOW IT WORKS **********/
+@media(max-width: 767px) {
+  .howitworks-content {
+    display: none;
+  }
+
+  .gray-sliver {
+    margin-bottom: 10px;
+  }
+}
+
+.howitworks-img {
+  width: 80%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
 }
 
 .showcase {
