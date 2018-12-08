@@ -1,5 +1,5 @@
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 h1,
@@ -12,49 +12,68 @@ h6 {
   font-weight: 700;
 }
 
+.white {
+  color: white;
+}
+
+.bright-blue {
+  color: #33bef2;
+}
+
+.logo-blue {
+  color: #008dd3;
+}
+
+.logo-blue-background {
+  background-color: #008dd3;
+}
+
+.light-yellow {
+  color: #fffac1;
+}
+
+.hero-title {
+  font-size: 5em;
+  font-weight: 900;
+}
+
+.hero-text {
+  font-size: 30px;
+}
+
 .bg-dark {
   background-color: #192b6c !important;
 }
 
 header.masthead {
   position: relative;
-  background-color: #F8F8F8;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 4rem;
-}
-
-header.masthead .overlay {
-  position: absolute;
-  background-color: #F8F8F8;
-  height: 100%;
+  background-image: url("../img/homeheader.png");
+  height: 600px;
   width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
+  padding-top: 30px;
+  padding-right: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-header.masthead h1 {
-  font-size: 2rem;
+.yellow-sliver {
+  height: 7px;
+  background-color: #f4d44a;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   header.masthead {
-    padding-top: 4rem;
+    padding-top: 40px;
   }
-  header.masthead h1 {
-    font-size: 3rem;
-  }
-  header.masthead img {
-    padding-top: 0;
-  }
-}
 
-header.masthead img {
-  padding-top: 2rem;
-  max-width: 100%;
+  .hero-title {
+    font-size: 3.5em;
+  }
+
+  .hero-text {
+    font-size: 25px;
+  }
 }
 
 .showcase {
@@ -80,6 +99,7 @@ header.masthead img {
   .showcase .showcase-text {
     padding: 7rem;
   }
+
   .showcase .card {
     max-width: 400px;
   }
@@ -235,6 +255,7 @@ footer.footer {
     display: inline-block;
     margin-bottom: 40px;
   }
+
   .press .carousel-caption p {
     font-size: 2em;
   }
