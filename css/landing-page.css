@@ -33,8 +33,10 @@ h6 {
 }
 
 .hero-title {
-  font-size: 5em;
+  font-size: 80px;
   font-weight: 900;
+  line-height: 1.2;
+  padding-bottom: 20px;
 }
 
 .hero-text {
@@ -45,10 +47,21 @@ h6 {
   background-color: #192b6c !important;
 }
 
+.logo-img {
+  height: 100px;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 65px;
+  }
+}
+
 header.masthead {
   position: relative;
   background-image: url("../img/homeheader.png");
-  height: 600px;
+  background-color: black;
+  height: 550px;
   width: 100%;
   padding-top: 30px;
   padding-right: 40px;
@@ -65,15 +78,26 @@ header.masthead {
 @media (max-width: 768px) {
   header.masthead {
     padding-top: 40px;
+    height: 350px;
   }
 
   .hero-title {
-    font-size: 3.5em;
+    font-size: 35px;
   }
 
   .hero-text {
-    font-size: 25px;
+    font-size: 16px;
   }
+}
+
+.credits {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.gray-sliver {
+  height: 1px;
+  background-color: lightgray;
 }
 
 .showcase {
