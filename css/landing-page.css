@@ -71,6 +71,21 @@ h2 {
   }
 }
 
+.tabs {
+  float: right;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.tab {
+  padding-left: 20px;
+}
+
+.login-btn {
+  float: right;
+  margin-top: 10px;
+}
+
 /********** HERO BANNER/MASTHEAD **********/
 
 .hero-title {
@@ -154,7 +169,6 @@ header.masthead {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 15px;
   height: 425px;
   width: 425px;
   margin-left: auto;
