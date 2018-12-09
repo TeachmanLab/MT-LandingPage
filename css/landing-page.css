@@ -1,6 +1,7 @@
 /********** GENERAL **********/
 body {
   font-family: 'Source Sans Pro', serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
 }
 
 h1 {
@@ -100,6 +101,7 @@ header.masthead {
 @media (max-width: 767px) {
   header.masthead {
     padding-top: 40px;
+    padding-right: 20px;
     height: 350px;
   }
 
@@ -108,7 +110,7 @@ header.masthead {
   }
 
   .hero-text {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 
@@ -177,18 +179,24 @@ header.masthead {
 
   .calm-thinking-title {
     padding-top: 20px;
+    padding-bottom: 0;
   }
 
   .calm-thinking-text {
-    font-size: 16px;
+    font-size: 18px;
     padding-left: 20px;
     padding-right: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
   }
 }
 
 .calm-btn {
   float: bottom;
+}
+
+/********** What is it? ********/
+.whatisbias-img {
+  width: 100%;
 }
 
 .features-icons {
