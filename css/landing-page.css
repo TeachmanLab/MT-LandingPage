@@ -14,6 +14,11 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
 .white {
   color: white;
 }
@@ -133,37 +138,35 @@ header.masthead {
   margin: auto;
 }
 
-.showcase {
-  color: white;
-  background-color: #192b6c;
-  padding-top: 4rem;
-}
-
-.showcase .showcase-text {
-  padding: 3rem;
-}
-
-.showcase .showcase-img {
-  min-height: 30rem;
+/********** PROGRAMS **********/
+.calm-thinking {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/calm.png");
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 15px;
+  height: 425px;
+  width: 425px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.showcase .card {
-  color: #000;
+.calm-thinking-title {
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 10px;
 }
 
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
-  }
-
-  .showcase .card {
-    max-width: 400px;
-  }
+.calm-thinking-text {
+  color: #ffffff;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 45px;
+  font-size: 20px;
 }
 
-.showcase .card-columns {
-  column-count: 1;
+.calm-btn {
+  float: bottom;
 }
 
 .features-icons {
