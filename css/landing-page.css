@@ -306,6 +306,12 @@ a.footer-tab {
 }
 
 /********** PRESS (Don't touch; the formatting seems scary) **********/
+@media(max-width: 767px) {
+  .press-text {
+    font-size: 16px;
+    line-height: normal;
+  }
+}
 
 .half_slider {
   padding-bottom: 4rem;
