@@ -38,11 +38,11 @@ h3 {
 }
 
 .bright-blue {
-  color: #33bef2;
+  color: #00AEEF;
 }
 
 .bright-blue-background {
-  background-color: #33bef2;
+  background-color: #00AEEF;
 }
 
 .logo-blue {
@@ -50,8 +50,8 @@ h3 {
 }
 
 .calm-thinking-btn {
-  background-color: #33bef2;
-  border-color: #33bef2;
+  background-color: #00AEEF;
+  border-color: #00AEEF;
   color: #ffffff;
   border-radius: 7px;
 }
@@ -212,6 +212,11 @@ header.masthead {
   margin: auto;
 }
 
+/********** What is it? ********/
+.whatisbias-img {
+  width: 100%;
+}
+
 /********** PROGRAMS **********/
 .calm-thinking {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/calm.png");
@@ -261,10 +266,7 @@ header.masthead {
   float: bottom;
 }
 
-/********** What is it? ********/
-.whatisbias-img {
-  width: 100%;
-}
+/********** ICONS GRID **********/
 
 .features-icons {
   background-color: #fff;
@@ -287,37 +289,23 @@ header.masthead {
   font-size: 5rem;
 }
 
-.testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+/********** FOOTER **********/
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.testimonials .testimonial-item {
-  max-width: 18rem;
+a.footer-tab {
+  font-size: 16px;
+  padding-left: 20px;
+  color: white;
 }
 
-.testimonials .testimonial-item img {
-  max-width: 12rem;
-  box-shadow: 0px 5px 5px 0px #adb5bd;
+.legal-text {
+  font-size: 16px;
 }
 
-.call-to-action {
-  position: relative;
-  background-color: white;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.call-to-action i {
-  font-size: 2em;
-  vertical-align: middle;
-  padding-left: 5px;
-}
-
-footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
+/********** PRESS (Don't touch; the formatting seems scary) **********/
 
 .half_slider {
   padding-bottom: 4rem;
@@ -366,7 +354,7 @@ footer.footer {
 }
 
 .press {
-  padding-bottom: 4rem;
+  padding-bottom: 20px;
 }
 
 .press .carousel-inner {
