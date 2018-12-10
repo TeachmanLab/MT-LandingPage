@@ -14,6 +14,11 @@ h2 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
 @media(max-width: 767px) {
   h1 {
     font-size: 35px;
@@ -21,6 +26,10 @@ h2 {
 
   h2 {
     font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
   }
 }
 
@@ -259,8 +268,7 @@ header.masthead {
 
 .features-icons {
   background-color: #fff;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-bottom: 40px;
 }
 
 .features-icons .features-icons-item {
