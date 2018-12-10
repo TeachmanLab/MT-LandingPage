@@ -71,10 +71,17 @@ h2 {
   }
 }
 
+@media (max-width: 884px) {
+  .tabs {
+    display: none;
+  }
+}
+
 .tabs {
   float: right;
   padding-top: 10px;
   padding-right: 20px;
+  font-size: 16px;
 }
 
 .tab {
@@ -84,6 +91,39 @@ h2 {
 .login-btn {
   float: right;
   margin-top: 10px;
+  font-size: 16px;
+}
+
+@media (min-width: 885px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger {
+  float: right;
+  margin-right: 20px;
+  margin-top: 22px;
+}
+
+.hamburger-icon {
+  width: 50px;
+}
+
+@media(max-width: 767px) {
+  .hamburger-icon {
+    width: 40px;
+  }
+
+  .hamburger {
+    margin-top: 12px;
+  }
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  text-decoration: none;
 }
 
 /********** HERO BANNER/MASTHEAD **********/
