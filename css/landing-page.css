@@ -1,98 +1,276 @@
+/********** GENERAL **********/
 body {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro', serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 18px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+h1 {
+  font-size: 50px;
   font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+@media(max-width: 767px) {
+  h1 {
+    font-size: 35px;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+}
+
+.white {
+  color: white;
+}
+
+.bright-blue {
+  color: #00AEEF;
+}
+
+.bright-blue-background {
+  background-color: #00AEEF;
+}
+
+.logo-blue {
+  color: #008dd3;
+}
+
+.calm-thinking-btn {
+  background-color: #00AEEF;
+  border-color: #00AEEF;
+  color: #ffffff;
+  border-radius: 7px;
+}
+
+.calm-thinking-btn:hover {
+  background-color: #0084bc;
+  border-color: #0084bc;
+}
+
+.light-yellow {
+  color: #fffac1;
 }
 
 .bg-dark {
   background-color: #192b6c !important;
 }
 
+/********** NAV BAR **********/
+.logo-img {
+  height: 100px;
+}
+
+@media (max-width: 767px) {
+  .logo-img {
+    height: 65px;
+  }
+}
+
+@media (max-width: 884px) {
+  .tabs {
+    display: none;
+  }
+}
+
+.tabs {
+  float: right;
+  padding-top: 10px;
+  padding-right: 20px;
+  font-size: 16px;
+}
+
+.tab {
+  padding-left: 20px;
+}
+
+.login-btn {
+  float: right;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+@media (min-width: 885px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+.hamburger {
+  float: right;
+  margin-right: 20px;
+  margin-top: 22px;
+}
+
+.hamburger-icon {
+  width: 50px;
+}
+
+@media(max-width: 767px) {
+  .hamburger-icon {
+    width: 40px;
+  }
+
+  .hamburger {
+    margin-top: 12px;
+  }
+}
+
+.hamburger-btn {
+  background: none;
+  border: none;
+  text-decoration: none;
+}
+
+/********** HERO BANNER/MASTHEAD **********/
+
+.hero-title {
+  font-size: 80px;
+  font-weight: 900;
+  line-height: 1.2;
+  padding-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 30px;
+}
+
 header.masthead {
   position: relative;
-  background-color: #F8F8F8;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  padding-top: 4rem;
-}
-
-header.masthead .overlay {
-  position: absolute;
-  background-color: #F8F8F8;
-  height: 100%;
+  background-image: url("../img/homeheader.jpg");
+  background-color: black;
+  height: 550px;
   width: 100%;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
-}
-
-header.masthead h1 {
-  font-size: 2rem;
-}
-
-@media (min-width: 768px) {
-  header.masthead {
-    padding-top: 4rem;
-  }
-  header.masthead h1 {
-    font-size: 3rem;
-  }
-  header.masthead img {
-    padding-top: 0;
-  }
-}
-
-header.masthead img {
-  padding-top: 2rem;
-  max-width: 100%;
-}
-
-.showcase {
-  color: white;
-  background-color: #192b6c;
-  padding-top: 4rem;
-}
-
-.showcase .showcase-text {
-  padding: 3rem;
-}
-
-.showcase .showcase-img {
-  min-height: 30rem;
+  padding-top: 30px;
+  padding-right: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 
-.showcase .card {
-  color: #000;
+.yellow-sliver {
+  height: 7px;
+  background-color: #f4d44a;
 }
 
-@media (min-width: 768px) {
-  .showcase .showcase-text {
-    padding: 7rem;
+@media (max-width: 767px) {
+  header.masthead {
+    padding-top: 40px;
+    padding-right: 20px;
+    height: 350px;
   }
-  .showcase .card {
-    max-width: 400px;
+
+  .hero-title {
+    font-size: 35px;
+  }
+
+  .hero-text {
+    font-size: 18px;
   }
 }
 
-.showcase .card-columns {
-  column-count: 1;
+/********** CREDITS **********/
+.credits {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
+
+.gray-sliver {
+  height: 1px;
+  background-color: lightgray;
+  margin-bottom: 30px;
+}
+
+/********** HOW IT WORKS **********/
+@media(max-width: 767px) {
+  .howitworks-content {
+    display: none;
+  }
+
+  .gray-sliver {
+    margin-bottom: 10px;
+  }
+}
+
+.howitworks-img {
+  width: 80%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+/********** What is it? ********/
+.whatisbias-img {
+  width: 100%;
+}
+
+/********** PROGRAMS **********/
+.calm-thinking {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/calm.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 425px;
+  width: 425px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.calm-thinking-title {
+  color: #ffffff;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.calm-thinking-text {
+  color: #ffffff;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 45px;
+  font-size: 20px;
+}
+
+@media(max-width: 767px) {
+  .calm-thinking {
+    height: 300px;
+    width: 300px;
+  }
+
+  .calm-thinking-title {
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  .calm-thinking-text {
+    font-size: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0;
+  }
+}
+
+.calm-btn {
+  float: bottom;
+}
+
+/********** ICONS GRID **********/
 
 .features-icons {
   background-color: #fff;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+  padding-bottom: 40px;
 }
 
 .features-icons .features-icons-item {
@@ -111,36 +289,28 @@ header.masthead img {
   font-size: 5rem;
 }
 
-.testimonials {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
+/********** FOOTER **********/
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.testimonials .testimonial-item {
-  max-width: 18rem;
+a.footer-tab {
+  font-size: 16px;
+  padding-left: 20px;
+  color: white;
 }
 
-.testimonials .testimonial-item img {
-  max-width: 12rem;
-  box-shadow: 0px 5px 5px 0px #adb5bd;
+.legal-text {
+  font-size: 16px;
 }
 
-.call-to-action {
-  position: relative;
-  background-color: white;
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.call-to-action i {
-  font-size: 2em;
-  vertical-align: middle;
-  padding-left: 5px;
-}
-
-footer.footer {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+/********** PRESS (Don't touch; the formatting seems scary) **********/
+@media(max-width: 767px) {
+  .press-text {
+    font-size: 16px;
+    line-height: normal;
+  }
 }
 
 .half_slider {
@@ -148,8 +318,8 @@ footer.footer {
 }
 
 .carousel {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .carousel-item img {
@@ -190,7 +360,7 @@ footer.footer {
 }
 
 .press {
-  padding-bottom: 4rem;
+  padding-bottom: 20px;
 }
 
 .press .carousel-inner {
@@ -235,6 +405,7 @@ footer.footer {
     display: inline-block;
     margin-bottom: 40px;
   }
+
   .press .carousel-caption p {
     font-size: 2em;
   }
