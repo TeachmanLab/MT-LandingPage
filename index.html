@@ -1,323 +1,488 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta
+      name="description"
+      content="A free online tool to help people reduce anxiety, provided by the University of Virginia."
+    />
+    <meta name="author" content="University of Virginia" />
 
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description"
-          content="A free online tool to help people reduce anxiety, provided by the University of Virginia.">
-    <meta name="author" content="University of Virginia">
-
-    <title>The Mindtrails Project</title>
+    <title>MindTrails</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
-          type="text/css">
+    <link
+      href="vendor/font-awesome/css/font-awesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="vendor/simple-line-icons/css/simple-line-icons.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Custom styles for this template -->
-    <link href="css/landing-page.min.css" rel="stylesheet">
+    <link href="css/landing-page.min.css" rel="stylesheet" />
 
     <link rel="icon" href="favicon.ico" type="image/ico" />
-</head>
 
-<body>
+    <!-- MindTrails font! -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro"
+      rel="stylesheet"
+    />
+  </head>
 
-<!-- Navigation -->
-<nav class="navbar navbar-dark bg-dark static-top">
-    <div class="container">
-        <a class="navbar-brand" href="#"><img src="img/logo.png" alt="MindTrails"/></a>
-    </div>
-</nav>
-
-<!-- Masthead -->
-<header class="masthead text-center">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <h1 class="mb-5">Feeling Anxious?<br/>Change Your Thinking.</h1>
-                <p>Join the MindTrails Project to say goodbye to anxiety symptoms.
-                    All you need is a computer, tablet, or smartphone.</p>
-                <a href="#programs" class="btn btn-default btn-lg btn-primary">Get Started Now</a>
-                <br/>
-                <img src="img/sponsors.png"
-                     alt="Supported by the National Institute of Mental Health and the University of Virginia">
-            </div>
-            <div class="col-sm">
-                <img src="img/phone.png" alt=""/>
-            </div>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <a href=""><img src="img/logo.png" alt="MindTrails" class="logo-img"/></a>
+      <div class="tabs">
+        <a href="https://mindtrails.virginia.edu/calm/public/about" class="tab"
+          >About</a
+        >
+        <a href="https://mindtrails.virginia.edu/calm/public/faq" class="tab"
+          >FAQ</a
+        >
+        <a
+          href="https://mindtrails.virginia.edu/calm/public/researchSupport"
+          class="tab"
+          >The Science of MindTrails</a
+        >
+        <a
+          href="https://implicit.harvard.edu/implicit/user/pimh/linkinfo.html"
+          class="tab"
+          >Mental Health Resources</a
+        >
+        <a
+          href="https://mindtrails.virginia.edu/calm/public/contact"
+          class="tab"
+          >Contact Us</a
+        >
+        <br />
+        <a
+          href="https://mindtrails.virginia.edu/calm/login"
+          class="btn btn-primary calm-thinking-btn login-btn"
+          >Log In to Calm Thinking</a
+        >
+      </div>
+      <div class="hamburger btn-group">
+        <button
+          type="button"
+          class="hamburger-btn"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          <img src="img/hamburger.png" alt="MENU" class="hamburger-icon" />
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a
+            href="https://mindtrails.virginia.edu/calm/public/about"
+            class="dropdown-item"
+            >About</a
+          >
+          <a
+            href="https://mindtrails.virginia.edu/calm/public/faq"
+            class="dropdown-item"
+            >FAQ</a
+          >
+          <a
+            href="https://mindtrails.virginia.edu/calm/public/researchSupport"
+            class="dropdown-item"
+            >The Science of MindTrails</a
+          >
+          <a
+            href="https://implicit.harvard.edu/implicit/user/pimh/linkinfo.html"
+            class="dropdown-item"
+            >Mental Health Resources</a
+          >
+          <a
+            href="https://mindtrails.virginia.edu/calm/public/contact"
+            class="dropdown-item"
+            >Contact Us</a
+          >
+          <a
+            href="https://mindtrails.virginia.edu/calm/login"
+            class="dropdown-item"
+            >Log In to Calm Thinking</a
+          >
         </div>
-    </div>
-</header>
+      </div>
+    </nav>
 
-<header class="half_slider">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <h1 class="text-center mb-5">What You'll Do</h1>
-        <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <!-- Slide One - Set the background image for this slide in the line below -->
+    <div class="yellow-sliver"></div>
+
+    <!-- Masthead -->
+    <header class="masthead text-right">
+      <div class="hero-title">
+        <div class="white">Feeling Anxious?</div>
+        <div class="bright-blue">Change Your Thinking.</div>
+      </div>
+      <p class="hero-text light-yellow">
+        Join the MindTrails Project to change<br />your anxious thinking. All
+        you need is a<br />computer, tablet, or smartphone.
+      </p>
+      <a
+        href="#programs"
+        class="btn btn-default btn-lg btn-primary calm-thinking-btn"
+        >Get Started Now</a
+      >
+    </header>
+
+    <div class="yellow-sliver"></div>
+
+    <!-- Credits -->
+    <div class="container credits">
+      <div class="row">
+        <div class="col">A program from</div>
+        <div class="col">Sponsored by</div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img
+            src="img/universityofvirginia.PNG"
+            alt="University of Virginia"
+            style="width: 65%"
+          />
+        </div>
+        <div class="col">
+          <img
+            src="img/nimh.PNG"
+            alt="National Institute of Mental Health"
+            style="width: 80%"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="gray-sliver"></div>
+
+    <!-- How it Works -->
+    <div class="container" style="padding-bottom: 40px">
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="bright-blue">How It Works</h1>
+          <p>Just three simple steps.</p>
+          <div class="row">
+            <h1 class="col-1 logo-blue">1</h1>
+            <div class="col-11">
+              <b>Tell us about yourself.</b><br />We'll ask you to answer some
+              questions about who you are and how you're feeling.
+            </div>
+            <div class="col-12" style="height: 15px"></div>
+            <h1 class="col-1 logo-blue">2</h1>
+            <div class="col-11">
+              <b>Picture yourself in different situations.</b><br />You'll be
+              asked to imagine yourself in situations with uncertain outcomes.
+            </div>
+            <div class="col-12" style="height: 15px"></div>
+            <h1 class="col-1 logo-blue">3</h1>
+            <div class="col-11">
+              <b>Practice thinking in new ways.</b><br />As you read about
+              situations that may cause anxiety, we'll help you think about them
+              in a healthier way.
+            </div>
+            <div class="col-12" style="height: 15px"></div>
+          </div>
+          <div class="text-center">
+            <a href="#programs" class="btn btn-primary calm-thinking-btn"
+              >Get Started</a
+            >
+          </div>
+        </div>
+        <div class="col-md-6 howitworks-content">
+          <img src="img/howitworks.png" class="howitworks-img" />
+        </div>
+      </div>
+    </div>
+
+    <!-- What is it? -->
+    <div class="container" style="padding-bottom: 40px">
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/whatisbias.jpg" class="whatisbias-img" />
+        </div>
+        <div class="col-md-6">
+          <h1 class="bright-blue">What is Interpretation Bias Training?</h1>
+          <p>
+            Research shows that people who are prone to anxiety tend to think
+            about situations negatively.
+            <b
+              >MindTrails training gives you practice thinking about situations
+              in new ways.</b
+            >
+            This encourages more flexibile thinking styles in your everyday life
+            that can break your thinking out of negative patterns.<br /><a
+              href="https://mindtrails.virginia.edu/calm/public/researchSupport"
+              >Learn more about the science</a
+            >
+          </p>
+          <div class="text-center">
+            <a href="#programs" class="btn btn-primary calm-thinking-btn"
+              >Start Training</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Programs -->
+    <div class="container" id="programs" style="padding-bottom: 40px">
+      <h1 class="bright-blue text-center" style="padding-bottom: 10px">
+        Available Programs
+      </h1>
+      <div class="calm-thinking text-center">
+        <h2 class="calm-thinking-title">Calm Thinking</h2>
+        <p class="calm-thinking-text">
+          Our newest program, designed to promote healthier thinking patterns
+          for people with anxiety. Calm Thinking is free as part of a study
+          funded by the National Institute of Mental Health.
+        </p>
+        <a
+          href="https://mindtrails.virginia.edu/calm/public/eligibility"
+          class="btn btn-primary calm-thinking-btn btn-lg"
+          >Am I Eligible?</a
+        >
+      </div>
+    </div>
+
+    <!-- In the News -->
+    <header
+      class="press text-center bright-blue-background"
+      style="margin-bottom: 40px"
+    >
+      <div class="container">
+        <h1 class="white text-left" style="padding-top: 20px;">
+          MindTrails in the News
+        </h1>
+        <div
+          id="pressReleaseCarousel"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <!--
+              Slide One - Set the background image for this slide in the line below
+            -->
             <div class="carousel-item active">
-                <img class="d-block" src="img/tell_us.png">
-                <div class="carousel-caption d-none d-block">
-                    <h3>1. Tell us about yourself.</h3>
-                    <p>We'll ask you some questions about who you are and how you're feeling."</p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block" src="img/picture_yourself.png">
-                <div class="carousel-caption d-none d-block">
-                    <h3>2. Picture yourself in different situations.</h3>
-                    <p>You’ll be asked to mentally put yourself in different situations. </p>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="d-block" src="img/practice_thinking.png">
-                <div class="carousel-caption d-none d-block">
-                    <h3>3. Practice thinking in new ways.</h3>
-                    <p>As you read different scenarios, we’ll help you think about them in a healthier way.</p>
-                </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <div class="text-center">
-        <a href="#programs" class="btn btn-default btn-lg btn-primary">Get Started Now</a>
-    </div>
-</header>
-
-
-<!-- Image Showcases -->
-<section class="showcase text-center" id="programs">
-    <h1 class="text-center mb-5">Available Programs</h1>
-    <p>Select the one that best fits you.</p>
-    <div class="card-columns">
-        <div class="card p-3">
-            <img class="card-img-top" src="img/calm.png" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Calm Thinking</h5>
-                <p class="card-text">Does your mind race?  This program may help you find more serene moments.
+              <div class="overlay"></div>
+              <img class="d-block" src="img/uva_today.jpg" />
+              <div class="carousel-caption trickcenter d-none d-block">
+                <h3>UVA Today</h3>
+                <p class="press-text">
+                  Negativity, Be Gone: This New UVA Online Tool Can Retrain Your
+                  Brain
                 </p>
-                <a href="https://mindtrails.virginia.edu/templeton/public/eligibility" class="btn btn-primary">Am I Eligible?</a>
-            </div>
-        </div>
-        <div class="card p-3">
-            <img class="card-img-top" src="img/Future_thinking.png" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Future Thinking</h5>
-                <p class="card-text">Do you expect things to go badly? This program may help you think in a
-                    healthier way.</p>
-                <a href="https://mindtrails.virginia.edu/templeton/public/eligibility" class="btn btn-primary">Am I Eligible?</a>
-            </div>
-        </div>
-        <div class="card p-3" >
-            <img class="card-img-top" src="img/anxiety.png" alt="Card image cap">
-            <div class="card-body">
-                <h5 class="card-title">Manage Anxiety</h5>
-                <p class="card-text">Do you worry a lot or feel scared? This program may help you feel less anxious.</p>
-                <a href="https://mindtrails.virginia.edu/public/eligibility" class="btn btn-primary">Am I Eligible?</a>
-            </div>
-        </div>
-
-
-    </div>
-</section>
-
-
-
-<!-- Icons Grid -->
-<section class="features-icons text-center">
-    <h1 class="text-center mb-5">Why Should You Sign Up?</h1>
-    <p>Research shows this program makes people feel like themselves again.  See how well it works for you.</p>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex">
-                        <i class="icon-speedometer m-auto text-primary"></i>
-                    </div>
-                    <h3>Brief Sessions</h3>
-                    <p class="lead mb-0">Sessions take about <br/>20-30 minutes.</p>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex">
-                        <i class="icon-lock m-auto text-primary"></i>
-                    </div>
-                    <h3>Confidential</h3>
-                    <p class="lead mb-0">Your information will not be shared.</p>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex">
-                        <i class="icon-emotsmile m-auto text-primary"></i>
-                    </div>
-                    <h3>Free</h3>
-                    <p class="lead mb-0">Participate for no charge.</p>
-                </div>
-            </div>
-            <div class="col-lg-3">
-                <div class="features-icons-item mx-auto mb-0 mb-lg-3">
-                    <div class="features-icons-icon d-flex">
-                        <i class="icon-chemistry m-auto text-primary"></i>
-                    </div>
-                    <h3>Developed by Scientists</h3>
-                    <p class="lead mb-0">Created at the University of Virginia.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <a href="#programs" class="btn btn-default btn-lg btn-primary">Get Started Now</a>
-</section>
-
-
-<header class="press text-center">
-    <div id="pressReleaseCarousel" class="carousel slide" data-ride="carousel">
-        <h1 class="text-center mb-5">Recent Press Releases</h1>
-        <ol class="carousel-indicators">
-            <li data-target="#pressReleaseCarousel" data-slide-to="0" class="active"></li>
-        </ol>
-        <div class="carousel-inner">
-            <!-- Slide One - Set the background image for this slide in the line below -->
-            <div class="carousel-item active">
-                    <div class="overlay"></div>
-                    <img class="d-block" src="img/uva_today.jpg">
-                <div class="carousel-caption trickcenter d-none d-block">
-                    <h3>UVA Today</h3>
-                    <p>Negativity be gone: This new online tool can retrain your brain.</p>
-                    <a href="https://news.virginia.edu/content/negativity-be-gone-new-uva-online-tool-can-retrain-your-brain">
-                        Read the full article.
-                    </a>
-
-                </div>
+                <a
+                  href="https://news.virginia.edu/content/negativity-be-gone-new-uva-online-tool-can-retrain-your-brain"
+                  class="press-text"
+                >
+                  Read the full article
+                </a>
+              </div>
             </div>
             <div class="carousel-item">
-                <div class="overlay"></div>
-                <img class="d-block" src="img/podcast.jpg">
-                <div class="carousel-caption trickcenter d-none d-block">
-                    <h3>WINA News Radio</h3>
-                    <p>Bethany Teachman : New Online Tool to Help Banish Negativity.</p>
-                    <a href="http://wina.com/podcasts/bethany-teachman-new-online-tool-to-help-banish-negativity/">
-                        Listen to Podcast.
-                    </a>
-                </div>
+              <div class="overlay"></div>
+              <img class="d-block" src="img/podcast.jpg" />
+              <div class="carousel-caption trickcenter d-none d-block">
+                <h3>WINA News Radio</h3>
+                <p class="press-text">
+                  Bethany Teachman: New Online Tool to Help Banish Negativity
+                </p>
+                <a
+                  href="http://wina.com/podcasts/bethany-teachman-new-online-tool-to-help-banish-negativity/"
+                  class="press-text"
+                >
+                  Listen to Podcast
+                </a>
+              </div>
             </div>
             <div class="carousel-item">
-                <div class="overlay"></div>
-                <img class="d-block" src="img/mental-health.jpg">
-                <div class="carousel-caption trickcenter d-none d-block">
-                    <h3>Psychology Today</h3>
-                    <p>The Catastrophic Effects of Mental Health Stigma</p>
-                    <a href=https://www.psychologytoday.com/us/blog/nurturing-self-compassion/201705/the-catastrophic-effects-mental-health-stigma">
-                        Read the full article.
-                    </a>
-                </div>
+              <div class="overlay"></div>
+              <img class="d-block" src="img/mental-health.jpg" />
+              <div class="carousel-caption trickcenter d-none d-block">
+                <h3>Psychology Today</h3>
+                <p class="press-text">
+                  The Catastrophic Effects of Mental Health Stigma
+                </p>
+                <a
+                  href="https://www.psychologytoday.com/us/blog/nurturing-self-compassion/201705/the-catastrophic-effects-mental-health-stigma"
+                  class="press-text"
+                >
+                  Read the full article
+                </a>
+              </div>
             </div>
-        </div>
-
-        <a class="carousel-control-prev" href="#pressReleaseCarousel" role="button" data-slide="prev">
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#pressReleaseCarousel"
+            role="button"
+            data-slide="prev"
+          >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#pressReleaseCarousel" role="button" data-slide="next">
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#pressReleaseCarousel"
+            role="button"
+            data-slide="next"
+          >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <div class="text-center">
-        <a href="#programs" class="btn btn-default btn-lg btn-primary">Get Started Now</a>
-    </div>
-</header>
-
-
-<!-- Call to Action -->
-<section class="call-to-action text-center bg-light">
-    <div class="overlay"></div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-9 mx-auto">
-                <h1 class="text-center mb-5">Want To Learn More?</h1>
-                <a href="mailto:studyteam@mindtrails.org">
-                <i class="icon-envelope text-primary"></i> studyteam@mindtrails.org
-                </a>
-            </div>
+          </a>
         </div>
-    </div>
-</section>
+      </div>
+    </header>
 
-<!-- Footer -->
-<footer class="footer bg-light">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 h-100 text-center text-lg-left my-auto">
-                <!--
-                <ul class="list-inline mb-2">
-                    <li class="list-inline-item">
-                        <a href="#">About</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                        <a href="#">Contact</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                        <a href="#">Terms of Use</a>
-                    </li>
-                    <li class="list-inline-item">&sdot;</li>
-                    <li class="list-inline-item">
-                        <a href="#">Privacy Policy</a>
-                    </li>
-                </ul>
-                -->
-                <p class="text-muted small mb-4 mb-lg-0">&copy; MindTrails 2018. All Rights Reserved.</p>
+    <!-- Our Team -->
+    <div class="container" style="padding-bottom: 30px">
+      <h1 class="bright-blue">Our Team</h1>
+      <!-- This image is displaying super washed-out for some reason... -->
+      <img src="img/team.jpg" style="width: 100%; padding-bottom: 10px;" />
+      <p>
+        We're a team of psychologists, engineers, and computer scientists from
+        the University of Virginia who are working together to use the latest
+        research to build new programs to reduce anxious thinking.
+      </p>
+    </div>
+
+    <!-- Icons Grid -->
+    <div class="container features-icons text-center">
+      <h1 class="bright-blue text-center">
+        MindTrails Programs are Designed to Help
+      </h1>
+      <div class="row">
+        <div class="col-md-4 col-6">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-lock m-auto logo-blue"></i>
             </div>
-            <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
-                <ul class="list-inline mb-0">
-                    <li class="list-inline-item mr-3">
-                        <a href="https://www.facebook.com/mindtrailsproject/">
-                            <i class="fa fa-facebook fa-2x fa-fw"></i>
-                        </a>
-                    </li>
-                    <!--
-                    <li class="list-inline-item mr-3">
-                        <a href="#">
-                            <i class="fa fa-twitter fa-2x fa-fw"></i>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#">
-                            <i class="fa fa-instagram fa-2x fa-fw"></i>
-                        </a>
-                    </li>
-                    -->
-                </ul>
-            </div>
+            <h3><b>Confidential</b></h3>
+            <p>We protect your personal information.</p>
+          </div>
         </div>
+        <div class="col-md-4 col-6">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-emotsmile m-auto logo-blue"></i>
+            </div>
+            <h3><b>Effective</b></h3>
+            <p>Research suggests our programs reduce anxious thinking.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-chemistry m-auto logo-blue"></i>
+            </div>
+            <h3><b>Scientific</b></h3>
+            <p>Our methods are developed by researchers.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-speedometer m-auto logo-blue"></i>
+            </div>
+            <h3><b>Quick</b></h3>
+            <p>Sessions take only 10-20 minutes to complete.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-wallet m-auto logo-blue"></i>
+            </div>
+            <h3><b>Free</b></h3>
+            <p>It costs nothing to participate.</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-6">
+          <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+            <div class="features-icons-icon d-flex">
+              <i class="icon-puzzle m-auto logo-blue"></i>
+            </div>
+            <h3><b>Dynamic</b></h3>
+            <p>
+              Your participation will improve these programs to help others.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="#programs" class="btn btn-primary calm-thinking-btn"
+          >Get Started</a
+        >
+      </div>
     </div>
-</footer>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Footer -->
+    <footer>
+      <div class="footer bg-dark">
+        <div class="container text-center">
+          <a
+            href="https://mindtrails.virginia.edu/calm/public/about"
+            class="footer-tab"
+            >About</a
+          >
+          <a
+            href="https://mindtrails.virginia.edu/calm/public/faq"
+            class="footer-tab"
+            >FAQ</a
+          >
+          <a
+            href="https://mindtrails.virginia.edu/calm/public/researchSupport"
+            class="footer-tab"
+            >The Science of MindTrails</a
+          >
+          <a
+            href="https://implicit.harvard.edu/implicit/user/pimh/linkinfo.html"
+            class="footer-tab"
+            >Mental Health Resources</a
+          >
+          <a
+            href="https://mindtrails.virginia.edu/calm/public/contact"
+            class="footer-tab"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+      <div class="container text-center">
+        <a
+          href="https://mindtrails.virginia.edu/calm/public/privacy"
+          class="legal-text"
+          >Privacy Policy</a
+        >
+        <a
+          href="https://mindtrails.virginia.edu/calm/public/disclaimer"
+          class="legal-text"
+          style="padding-left: 20px"
+          >Terms and Conditions</a
+        >
+        <p class="legal-text">
+          © Copyright 2018 by MindTrails Project • All rights reserved
+        </p>
+      </div>
+    </footer>
 
-</body>
-
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
