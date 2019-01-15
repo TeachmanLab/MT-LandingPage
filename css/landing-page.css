@@ -80,7 +80,7 @@ h3 {
   }
 }
 
-@media (max-width: 884px) {
+@media (max-width: 1003px) {
   .tabs {
     display: none;
   }
@@ -103,7 +103,7 @@ h3 {
   font-size: 16px;
 }
 
-@media (min-width: 885px) {
+@media (min-width: 1004px) {
   .hamburger {
     display: none;
   }
