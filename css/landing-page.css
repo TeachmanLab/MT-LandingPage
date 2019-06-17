@@ -159,20 +159,85 @@ h3 {
   font-size: 30px;
 }
 
-.masthead-filter {
-  background: rgba(0, 0, 0, 0.4);
-  height: 100%;
-  padding-top: 60px;
-  padding-right: 40px;
-}
-
-header.masthead {
+header.masthead0 {
   position: relative;
   height: 550px;
   width: 100%;
+  padding-top: 60px;
+  padding-right: 40px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/banner0.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+header.masthead1 {
+  position: relative;
+  height: 550px;
+  width: 100%;
+  padding-top: 60px;
+  padding-right: 40px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/banner1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header.masthead2 {
+  position: relative;
+  height: 550px;
+  width: 100%;
+  padding-top: 60px;
+  padding-right: 40px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/banner2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header.masthead3 {
+  position: relative;
+  height: 550px;
+  width: 100%;
+  padding-top: 60px;
+  padding-right: 40px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/banner3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#stage header {
+  position: absolute;
+}
+
+#stage header:nth-of-type(1) {
+  animation-name: fader;
+  animation-delay: 4s;
+  animation-duration: 1s;
+  z-index: 20;
+}
+
+#stage header:nth-of-type(2) {
+  z-index: 10;
+}
+
+#stage header:nth-of-type(n+3) {
+  display: none;
+}
+
+@keyframes fader {
+  from {
+    opacity: 1.0;
+  }
+
+  to {
+    opacity: 0.0;
+  }
+}
+
+.spacer {
+  height: 550px;
 }
 
 .yellow-sliver {
@@ -181,13 +246,32 @@ header.masthead {
 }
 
 @media (max-width: 767px) {
-  header.masthead {
-    height: 300px;
-  }
-
-  .masthead-filter {
+  header.masthead0 {
+    height: 280px;
     padding-top: 30px;
     padding-right: 15px;
+  }
+
+  header.masthead1 {
+    height: 280px;
+    padding-top: 30px;
+    padding-right: 15px;
+  }
+
+  header.masthead2 {
+    height: 280px;
+    padding-top: 30px;
+    padding-right: 15px;
+  }
+
+  header.masthead3 {
+    height: 280px;
+    padding-top: 30px;
+    padding-right: 15px;
+  }
+
+  .spacer {
+    height: 280px;
   }
 
   .hero-title {
