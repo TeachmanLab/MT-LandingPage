@@ -1,6 +1,7 @@
 /********** GENERAL **********/
 body {
-  font-family: 'Source Sans Pro', serif, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Source Sans Pro", serif, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
   font-size: 18px;
 }
 
@@ -19,7 +20,7 @@ h3 {
   font-weight: 700;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   h1 {
     font-size: 35px;
   }
@@ -38,11 +39,11 @@ h3 {
 }
 
 .bright-blue {
-  color: #00AEEF;
+  color: #00aeef;
 }
 
 .bright-blue-background {
-  background-color: #00AEEF;
+  background-color: #00aeef;
 }
 
 .logo-blue {
@@ -50,8 +51,8 @@ h3 {
 }
 
 .calm-thinking-btn {
-  background-color: #00AEEF;
-  border-color: #00AEEF;
+  background-color: #00aeef;
+  border-color: #00aeef;
   color: #ffffff;
   border-radius: 7px;
 }
@@ -119,7 +120,7 @@ h3 {
   width: 50px;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .hamburger-icon {
     width: 40px;
   }
@@ -139,9 +140,9 @@ h3 {
   font-size: 1.35em;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .btn-lg {
-    font-size: 1.25em;
+    font-size: 1em;
   }
 }
 
@@ -158,14 +159,17 @@ h3 {
   font-size: 30px;
 }
 
+.masthead-filter {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  padding-top: 60px;
+  padding-right: 40px;
+}
+
 header.masthead {
   position: relative;
-  background-image: url("../img/homeheader.jpg");
-  background-color: black;
-  height: 480px;
+  height: 550px;
   width: 100%;
-  padding-top: 30px;
-  padding-right: 40px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -178,13 +182,16 @@ header.masthead {
 
 @media (max-width: 767px) {
   header.masthead {
-    padding-top: 40px;
-    padding-right: 20px;
-    height: 350px;
+    height: 300px;
+  }
+
+  .masthead-filter {
+    padding-top: 30px;
+    padding-right: 15px;
   }
 
   .hero-title {
-    font-size: 38px;
+    font-size: 32px;
   }
 
   .hero-text {
@@ -205,7 +212,7 @@ header.masthead {
 }
 
 /********** HOW IT WORKS **********/
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .howitworks-content {
     display: none;
   }
@@ -229,7 +236,8 @@ header.masthead {
 
 /********** PROGRAMS **********/
 .calm-thinking {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("../img/calm-water.jpeg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url("../img/calm-water.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,7 +261,7 @@ header.masthead {
   font-size: 20px;
 }
 
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .calm-thinking {
     height: 300px;
     width: 300px;
@@ -317,7 +325,7 @@ a.footer-tab {
 }
 
 /********** PRESS (Don't touch; the formatting seems scary) **********/
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .press-text {
     font-size: 16px;
     line-height: normal;
@@ -392,7 +400,7 @@ a.footer-tab {
 }
 
 .press .carousel-caption h3 {
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 .press .carousel-caption a {

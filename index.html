@@ -4,17 +4,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta name="description" content="A free online tool to help people reduce anxiety, provided by the University of Virginia." />
+  <meta name="description"
+    content="A free online tool to help people reduce anxiety, provided by the University of Virginia." />
   <meta name="author" content="University of Virginia" />
 
   <title>MindTrails</title>
 
   <!-- Google Analytics -->
   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r;
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date();
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-77944674-4', 'auto');
     ga('send', 'pageview');
@@ -79,18 +87,21 @@
 
   <!-- Masthead -->
   <header class="masthead text-right">
+    <div class="masthead-filter">
     <div class="hero-title">
-      <div class="white">Feeling Anxious?</div>
-      <div class="bright-blue">Change Your Thinking.</div>
+      <div class="white">Understand Your Thinking.</div>
+      <div class="bright-blue">Feel Less Anxious.</div>
     </div>
     <p class="hero-text light-yellow">
       Join for free to change your anxious thinking.</br> All
       you need is a computer, tablet, or smartphone.
     </p>
-    <a href="https://mindtrails.virginia.edu/calm/public/eligibility" class="btn btn-default btn-lg btn-primary calm-thinking-btn">Get
+    <a href="https://mindtrails.virginia.edu/calm/public/eligibility"
+      class="btn btn-default btn-lg btn-primary calm-thinking-btn">Get
       Started Now</a>
+    </div>
   </header>
-
+  
   <div class="yellow-sliver"></div>
 
   <!-- Credits -->
@@ -139,7 +150,8 @@
           <div class="col-12" style="height: 15px"></div>
         </div>
         <div class="text-center">
-          <a href="https://mindtrails.virginia.edu/calm/public/eligibility" class="btn btn-primary btn-lg calm-thinking-btn">Get
+          <a href="https://mindtrails.virginia.edu/calm/public/eligibility"
+            class="btn btn-primary btn-lg calm-thinking-btn">Get
             Started</a>
         </div>
       </div>
@@ -163,11 +175,13 @@
           <b>MindTrails training gives you practice thinking about situations
             in new ways.</b>
           This encourages more flexible thinking styles in your everyday life
-          that can break your thinking out of negative patterns.<br /><a href="https://mindtrails.virginia.edu/calm/public/researchSupport">Learn
+          that can break your thinking out of negative patterns.<br /><a
+            href="https://mindtrails.virginia.edu/calm/public/researchSupport">Learn
             more about the science</a>
         </p>
         <div class="text-center">
-          <a href="https://mindtrails.virginia.edu/calm/public/eligibility" class="btn btn-primary btn-lg calm-thinking-btn">Start
+          <a href="https://mindtrails.virginia.edu/calm/public/eligibility"
+            class="btn btn-primary btn-lg calm-thinking-btn">Start
             Training</a>
         </div>
       </div>
@@ -186,7 +200,8 @@
         for people with anxiety. Calm Thinking is free as part of a study
         funded by the National Institute of Mental Health.
       </p>
-      <a href="https://mindtrails.virginia.edu/calm/public/eligibility" class="btn btn-primary calm-thinking-btn btn-lg">Am
+      <a href="https://mindtrails.virginia.edu/calm/public/eligibility"
+        class="btn btn-primary calm-thinking-btn btn-lg">Am
         I Eligible?</a>
     </div>
   </div>
@@ -225,7 +240,8 @@
               <p class="press-text">
                 Bethany Teachman: New Online Tool to Help Banish Negativity
               </p>
-              <a href="http://wina.com/podcasts/bethany-teachman-new-online-tool-to-help-banish-negativity/" class="press-text">
+              <a href="http://wina.com/podcasts/bethany-teachman-new-online-tool-to-help-banish-negativity/"
+                class="press-text">
                 Listen to Podcast
               </a>
             </div>
@@ -334,7 +350,8 @@
       </div>
     </div>
     <div class="text-center">
-      <a href="https://mindtrails.virginia.edu/calm/public/eligibility" class="btn btn-primary btn-lg calm-thinking-btn">Get
+      <a href="https://mindtrails.virginia.edu/calm/public/eligibility"
+        class="btn btn-primary btn-lg calm-thinking-btn">Get
         Started</a>
     </div>
   </div>
@@ -355,7 +372,8 @@
     </div>
     <div class="container text-center">
       <a href="https://mindtrails.virginia.edu/calm/public/privacy" class="legal-text">Privacy Policy</a>
-      <a href="https://mindtrails.virginia.edu/calm/public/disclaimer" class="legal-text" style="padding-left: 20px">Terms
+      <a href="https://mindtrails.virginia.edu/calm/public/disclaimer" class="legal-text"
+        style="padding-left: 20px">Terms
         and Conditions</a>
       <p class="legal-text">
         © Copyright 2019 by MindTrails Project • All rights reserved
@@ -366,6 +384,22 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Header Carousel Script -->
+  <script>
+    var slideIndex = 0;
+    carousel();
+
+    function carousel() {
+      slideIndex++;
+      if (slideIndex > 3) {
+        slideIndex = 0
+      }
+      let curBackground = "url(../img/banner" + slideIndex + ".jpg)";
+      document.getElementsByClassName("masthead")[0].style.backgroundImage = curBackground;
+      setTimeout(carousel, 4000);
+    }
+  </script>
 </body>
 
 </html>
