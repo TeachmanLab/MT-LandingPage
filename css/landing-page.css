@@ -159,52 +159,52 @@ h3 {
   font-size: 30px;
 }
 
-header.masthead0 {
-  position: relative;
-  height: 550px;
-  width: 100%;
-  padding-top: 60px;
-  padding-right: 40px;
+.banner0 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/banner0.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-header.masthead1 {
-  position: relative;
-  height: 550px;
-  width: 100%;
-  padding-top: 60px;
-  padding-right: 40px;
+.banner1 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/banner1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-header.masthead2 {
-  position: relative;
-  height: 550px;
-  width: 100%;
-  padding-top: 60px;
-  padding-right: 40px;
+.banner2 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/banner2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-header.masthead3 {
-  position: relative;
+.banner3 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/banner3.jpg);
+}
+
+.banner4 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/banner4.jpg);
+}
+
+.banner5 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/banner5.jpg);
+}
+
+.banner6 {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/banner6.jpg);
+}
+
+.masthead-img {
   height: 550px;
   width: 100%;
   padding-top: 60px;
   padding-right: 40px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(../img/banner3.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: -100;
+}
+
+.masthead-content {
+  position: absolute;
+  height: 550px;
+  width: 100%;
+  padding-top: 60px;
+  padding-right: 40px;
+  z-index: 100;
 }
 
 #stage header {
@@ -246,25 +246,13 @@ header.masthead3 {
 }
 
 @media (max-width: 767px) {
-  header.masthead0 {
+  .masthead-content {
     height: 280px;
     padding-top: 30px;
     padding-right: 15px;
   }
 
-  header.masthead1 {
-    height: 280px;
-    padding-top: 30px;
-    padding-right: 15px;
-  }
-
-  header.masthead2 {
-    height: 280px;
-    padding-top: 30px;
-    padding-right: 15px;
-  }
-
-  header.masthead3 {
+  .masthead-img {
     height: 280px;
     padding-top: 30px;
     padding-right: 15px;
