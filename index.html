@@ -94,9 +94,10 @@
     <header class="masthead-img banner4"></header>
     <header class="masthead-img banner5"></header>
     <header class="masthead-img banner6"></header>
+    <header class="masthead-img banner7"></header>
     <div class="masthead-content text-right">
       <div class="hero-title">
-        <div class="white">Think More Flexibly.</div>
+        <div class="white">Understand Your Thinking.</div>
         <div class="bright-blue">Feel Less Anxious.</div>
       </div>
       <p class="hero-text light-yellow">
@@ -107,10 +108,10 @@
         class="btn btn-default btn-lg btn-primary calm-thinking-btn">Get
         Started Now</a>
     </div>
-  </div>  
+  </div>
 
   <div class="spacer"></div>
-  
+
   <div class="yellow-sliver"></div>
 
   <!-- Credits -->
@@ -396,17 +397,19 @@
 
   <!-- Header Carousel Script -->
   <script type="text/javascript">
-  // Original JavaScript code by Chirp Internet: www.chirp.com.au
-  // Please acknowledge use of this code by including this header.
+    // Original JavaScript code by Chirp Internet: www.chirp.com.au
+    // Please acknowledge use of this code by including this header.
 
-  window.addEventListener("DOMContentLoaded", function(e) {
-    var stage = document.getElementById("stage");
-    var fadeComplete = function(e) { stage.appendChild(arr[0]); };
-    var arr = stage.getElementsByTagName("header");
-    for(var i=0; i < arr.length; i++) {
-      arr[i].addEventListener("animationend", fadeComplete, false);
-    }
-  }, false);
+    window.addEventListener("DOMContentLoaded", function (e) {
+      var stage = document.getElementById("stage");
+      var fadeComplete = function (e) {
+        stage.appendChild(arr[0]);
+      };
+      var arr = stage.getElementsByTagName("header");
+      for (var i = 0; i < arr.length; i++) {
+        arr[i].addEventListener("animationend", fadeComplete, false);
+      }
+    }, false);
   </script>
 </body>
 
