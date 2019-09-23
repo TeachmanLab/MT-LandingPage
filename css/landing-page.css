@@ -38,6 +38,10 @@ h3 {
   color: white;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .bright-blue {
   color: #00aeef;
 }
@@ -160,74 +164,58 @@ h3 {
 }
 
 .banner0 {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
-    ),
+      rgba(0, 0, 0, 0.9)),
     url(../img/low_res/banner0.jpg);
 }
 
 .banner1 {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
-    ),
+      rgba(0, 0, 0, 0.9)),
     url(../img/low_res/banner1.jpg);
 }
 
 .banner2 {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
-    ),
+      rgba(0, 0, 0, 0.9)),
     url(../img/low_res/banner2.jpg);
 }
 
 .banner3 {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
-    ),
+      rgba(0, 0, 0, 0.9)),
     url(../img/low_res/banner3.jpg);
 }
 
 .banner4 {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
-    ),
+      rgba(0, 0, 0, 0.9)),
     url(../img/low_res/banner4.jpg);
 }
 
 .banner5 {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
-    ),
+      rgba(0, 0, 0, 0.9)),
     url(../img/low_res/banner5.jpg);
 }
 
 .banner6 {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
-    ),
+      rgba(0, 0, 0, 0.9)),
     url(../img/low_res/banner6.jpg);
 }
 
 .banner7 {
-  background-image: linear-gradient(
-      to right,
+  background-image: linear-gradient(to right,
       rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.9)
-    ),
+      rgba(0, 0, 0, 0.9)),
     url(../img/low_res/banner7.jpg);
 }
 
@@ -324,7 +312,22 @@ h3 {
 .gray-sliver {
   height: 1px;
   background-color: lightgray;
+}
+
+/********** TESTIMONIALS **********/
+.testimonials {
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-bottom: 30px;
+}
+
+.quote {
+  margin-bottom: .5rem !important;
+}
+
+.quotee {
+  font-weight: bold;
+  text-align: center;
 }
 
 /********** HOW IT WORKS **********/

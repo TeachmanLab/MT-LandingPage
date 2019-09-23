@@ -3,13 +3,29 @@
 
 <head>
   <!-- Anti-flicker snippet (recommended)  -->
-  <style>.async-hide { opacity: 0 !important} </style>
-  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-    })(window,document.documentElement,'async-hide','dataLayer',4000,
-    {'OPT_CONTAINER_ID':true});</script>
-  
+  <style>
+    .async-hide {
+      opacity: 0 !important
+    }
+  </style>
+  <script>
+    (function (a, s, y, n, c, h, i, d, e) {
+      s.className += ' ' + y;
+      h.start = 1 * new Date;
+      h.end = i = function () {
+        s.className = s.className.replace(RegExp(' ?' + y), '')
+      };
+      (a[n] = a[n] || []).hide = h;
+      setTimeout(function () {
+        i();
+        h.end = null
+      }, c);
+      h.timeout = c;
+    })(window, document.documentElement, 'async-hide', 'dataLayer', 4000, {
+      'OPT_CONTAINER_ID': true
+    });
+  </script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description"
@@ -139,7 +155,42 @@
     </div>
   </div>
 
-  <div class="gray-sliver"></div>
+  <!--Testimonials-->
+  <div class="testimonials bright-blue-background white">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="white">Buzz About MindTrails</h1>
+        </div>
+      </div>
+      <div class="row" style="margin-bottom: 15px;">
+        <div class="col">
+          <p class="quote">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua."</p>
+          <div class="quotee">Claudia</div>
+        </div>
+        <div class="col">
+          <p class="quote">"Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat."
+          </p>
+          <div class="quotee">Noah</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="quote">"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+          </p>
+          <div class="quotee">Bethany</div>
+        </div>
+        <div class="col">
+          <p class="quote">"Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum."
+          </p>
+          <div class="quotee">Henry</div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- How it Works -->
   <div class="container" style="padding-bottom: 40px">
@@ -432,7 +483,7 @@
         // Once image is loaded replace the src of the HTML element
         img.onload = () => {
           item.classList.remove('asyncImage');
-          if(item.classList.contains('masthead-img')) {
+          if (item.classList.contains('masthead-img')) {
             console.log("it is a masthead");
             return item.style.backgroundImage = `linear-gradient(
                                                   to right,
@@ -442,8 +493,8 @@
           } else {
             console.log("it is NOT a masthead");
             return item.nodeName === 'IMG' ?
-                    item.src = item.dataset.src :
-                    item.style.backgroundImage = `url(${item.dataset.src})`;
+              item.src = item.dataset.src :
+              item.style.backgroundImage = `url(${item.dataset.src})`;
           }
         };
       });
