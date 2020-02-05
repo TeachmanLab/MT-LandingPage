@@ -2,6 +2,8 @@
 <html lang="en">
 
 <head>
+  <!-- Written by Noah French in 2019, featuring some helpful JavaScript snippets from Dan Funk -->
+
   <!-- Anti-flicker snippet (recommended)  -->
   <style>.async-hide { opacity: 0 !important} </style>
   <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
@@ -104,6 +106,7 @@
     <header class="asyncImage masthead-img banner5" data-src="/img/banner5.jpg"></header>
     <header class="asyncImage masthead-img banner6" data-src="/img/banner6.jpg"></header>
     <header class="asyncImage masthead-img banner7" data-src="/img/banner7.jpg"></header>
+    <header class="asyncImage masthead-img banner8" data-src="/img/banner8.jpg"></header>
     <div class="masthead-content text-right">
       <div class="hero-title">
         <div class="white">Understand Your Thinking.</div>
@@ -236,7 +239,21 @@
           <!--
               Slide One - Set the background image for this slide in the line below
             -->
-          <div class="carousel-item active">
+            <div class="carousel-item active">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/hill_article.jpg" style="width: 100%;"/>
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>The Hill</h3>
+              <p class="press-text">
+                Phones Can Help Our Anxiety and Not Just Add to It
+              </p>
+              <a href="https://thehill.com/opinion/healthcare/465519-phones-can-help-our-anxiety-and-not-just-add-to-it"
+                class="press-text">
+                Read the full article
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
             <div class="overlay"></div>
             <img class="d-block" src="img/uva_today.jpg" />
             <div class="carousel-caption trickcenter d-none d-block">
@@ -248,6 +265,20 @@
               <a href="https://news.virginia.edu/content/negativity-be-gone-new-uva-online-tool-can-retrain-your-brain"
                 class="press-text">
                 Read the full article
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/abc_big_ideas.jpg" style="width: 100%;"/>
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>ABC Radio National</h3>
+              <p class="press-text">
+                Online Help for Anxiety
+              </p>
+              <a href="https://www.abc.net.au/radionational/programs/bigideas/online-help-for-anxiety/10970416"
+                class="press-text">
+                Listen to Podcast
               </a>
             </div>
           </div>
@@ -394,8 +425,11 @@
       <a href="https://mindtrails.virginia.edu/calm/public/disclaimer" class="legal-text"
         style="padding-left: 20px">Terms
         and Conditions</a>
+      <p class="legal-text" style="margin-bottom: 0">
+        © Copyright 2020 by MindTrails Project • All rights reserved
+      </p>
       <p class="legal-text">
-        © Copyright 2019 by MindTrails Project • All rights reserved
+        Approved by the University of Virginia Institutional Review Board for the Social and Behavioral Sciences (IRB-SBS) under Protocol Number 2220
       </p>
     </div>
   </footer>
