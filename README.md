@@ -1,4 +1,4 @@
-# MindTrails Landing Page
+# MT-LandingPage
 
 This is based off of a Bootstrap startup landing page.  The rest of the readme focuses on this.
 To make this easy to deploy in the one place we have some control over on our servers, i've added
@@ -6,7 +6,9 @@ a make_war.sh script that will generate a very simple war file we can use to dep
 just run the script, and copy the resulting landing.war to our production server, then move it
 into the deployment directory.  Have a great day!
 
+## Previous Names
 
+Until 5/18/2020, this repository was named "mindtrails_landingpage".
 
 # [Start Bootstrap - Landing Page](https://startbootstrap.com/template-overviews/landing-page/)
 
