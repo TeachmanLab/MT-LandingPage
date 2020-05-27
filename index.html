@@ -5,13 +5,18 @@
   <!-- Written by Noah French in 2019, featuring some helpful JavaScript snippets from Dan Funk -->
 
   <!-- Anti-flicker snippet (recommended)  -->
-  <style>.async-hide { opacity: 0 !important} </style>
-  <script>(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;h.start=1*new Date;
-    h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
-    (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);h.timeout=c;
-    })(window,document.documentElement,'async-hide','dataLayer',4000,
-    {'OPT_CONTAINER_ID':true});</script>
-  
+  <style>
+    .async-hide {
+      opacity: 0 !important
+    }
+  </style>
+  <script>(function (a, s, y, n, c, h, i, d, e) {
+      s.className += ' ' + y; h.start = 1 * new Date;
+      h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
+      (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
+    })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
+      { 'OPT_CONTAINER_ID': true });</script>
+
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description"
@@ -116,6 +121,9 @@
         Join for free to change your anxious thinking.</br> All
         you need is a computer, tablet, or smartphone.
       </p>
+      <p class="hero-incentive">
+        You may be eligible to receive up to $40 (USD) for participating in the MindTrails study.
+      </p>
       <a href="https://mindtrails.virginia.edu/calm/public/eligibility"
         class="btn btn-default btn-lg btn-primary calm-thinking-btn">Get
         Started Now</a>
@@ -212,15 +220,18 @@
 
   <!-- Programs -->
   <div class="container" id="programs" style="padding-bottom: 40px">
-    <h1 class="bright-blue text-center" style="padding-bottom: 10px">
+    <!-- <h1 class="bright-blue text-center" style="padding-bottom: 10px">
       Available Programs
-    </h1>
+    </h1> -->
     <div class="calm-thinking text-center">
-      <h2 class="calm-thinking-title">Calm Thinking</h2>
+      <h2 class="calm-thinking-title">MindTrails</h2>
       <p class="calm-thinking-text">
-        Our newest program, designed to promote healthier thinking patterns
-        for people with anxiety. Calm Thinking is free as part of a study
+        MindTrails is designed to promote healthier thinking patterns
+        for people with anxiety. MindTrails is free as part of a study
         funded by the National Institute of Mental Health.
+      </p>
+      <p class="calm-thinking-text">
+        You may be eligible to receive up to $40 (USD) for participating in the MindTrails study.
       </p>
       <a href="https://mindtrails.virginia.edu/calm/public/eligibility"
         class="btn btn-primary calm-thinking-btn btn-lg">Am
@@ -239,9 +250,93 @@
           <!--
               Slide One - Set the background image for this slide in the line below
             -->
-            <div class="carousel-item active">
+          <div class="carousel-item active">
             <div class="overlay"></div>
-            <img class="d-block" src="img/hill_article.jpg" style="width: 100%;"/>
+            <img class="d-block" src="img/roller_coaster.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>ADAA Webinar</h3>
+              <p class="press-text">
+                Managing the Roller Coaster of Emotions During COVID-19
+              </p>
+              <a href="https://adaa.org/webinar/consumer/managing-roller-coaster-emotions-during-covid-19"
+                class="press-text">
+                Watch the full video
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/handwash.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>The Conversation</h3>
+              <p class="press-text">
+                Feeling overwhelmed? Approach coronavirus as a challenge to be met, not a threat to be feared
+              </p>
+              <a href="https://theconversation.com/feeling-overwhelmed-approach-coronavirus-as-a-challenge-to-be-met-not-a-threat-to-be-feared-134211"
+                class="press-text">
+                Read the full article
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/upside_down.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>UVA College Spotlight Speaker Series</h3>
+              <p class="press-text">
+                Managing anxiety when the world is upside down
+              </p>
+              <a href="https://www.facebook.com/watch/live/?v=244638963558139&ref=watch_permalink"
+                class="press-text">
+                Watch the full video
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/worried_woman.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>ADAA</h3>
+              <p class="press-text">
+                Why Anxiety Should Not Be Feared
+              </p>
+              <a href="https://adaa.org/learn-from-us/from-the-experts/blog-posts/consumer/why-anxiety-should-not-be-feared"
+                class="press-text">
+                Read the full article
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/covid.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>UVA Webinar</h3>
+              <p class="press-text">
+                  Managing Mental Health During Covid-19 
+              </p>
+              <a href="https://provost.virginia.edu/subsite/faculty-development/managing-mental-health-during-covid-19"
+                class="press-text">
+                Watch the full video
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/podcast.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>NPR Radio IQ WVTF</h3>
+              <p class="press-text">
+                UVA Offers Free Online Programs for Anxiety
+              </p>
+              <a href="https://www.wvtf.org/post/uva-offers-free-online-programs-anxiety#stream/0"
+                class="press-text">
+                Read the full article
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/hill_article.jpg" style="width: 100%;" />
             <div class="carousel-caption trickcenter d-none d-block">
               <h3>The Hill</h3>
               <p class="press-text">
@@ -270,7 +365,7 @@
           </div>
           <div class="carousel-item">
             <div class="overlay"></div>
-            <img class="d-block" src="img/abc_big_ideas.jpg" style="width: 100%;"/>
+            <img class="d-block" src="img/abc_big_ideas.jpg" style="width: 100%;" />
             <div class="carousel-caption trickcenter d-none d-block">
               <h3>ABC Radio National</h3>
               <p class="press-text">
@@ -429,7 +524,8 @@
         © Copyright 2020 by MindTrails Project • All rights reserved
       </p>
       <p class="legal-text">
-        Approved by the University of Virginia Institutional Review Board for the Social and Behavioral Sciences (IRB-SBS) under Protocol Number 2220
+        Approved by the University of Virginia Institutional Review Board for the Social and Behavioral Sciences
+        (IRB-SBS) under Protocol Number 2220
       </p>
     </div>
   </footer>
@@ -466,7 +562,7 @@
         // Once image is loaded replace the src of the HTML element
         img.onload = () => {
           item.classList.remove('asyncImage');
-          if(item.classList.contains('masthead-img')) {
+          if (item.classList.contains('masthead-img')) {
             console.log("it is a masthead");
             return item.style.backgroundImage = `linear-gradient(
                                                   to right,
@@ -476,8 +572,8 @@
           } else {
             console.log("it is NOT a masthead");
             return item.nodeName === 'IMG' ?
-                    item.src = item.dataset.src :
-                    item.style.backgroundImage = `url(${item.dataset.src})`;
+              item.src = item.dataset.src :
+              item.style.backgroundImage = `url(${item.dataset.src})`;
           }
         };
       });
