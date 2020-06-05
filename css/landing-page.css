@@ -365,7 +365,8 @@ h3 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  /* height: 600px; */
+  height: 450px;
   width: 425px;
   margin-left: auto;
   margin-right: auto;
