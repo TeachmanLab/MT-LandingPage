@@ -454,6 +454,7 @@ a.footer-tab {
   .press-text {
     font-size: 16px;
     line-height: normal;
+    padding: 5px;
   }
 }
 
@@ -537,12 +538,16 @@ a.footer-tab {
 @media (min-width: 768px) {
   .press .carousel-caption h3 {
     font-size: 2em;
-    background-color: #adb5bd;
+    background-color: #F1F1EF;
     display: inline-block;
     margin-bottom: 40px;
+    width: 100%;
+    padding: 15px;
+    color: #232D4B;
   }
 
   .press .carousel-caption p {
     font-size: 2em;
+    padding: 0px 15px
   }
 }
