@@ -1,0 +1,193 @@
+,bl_group,subgroup,package,time_window,loyalty,loyalty_mean,loyalty_std,regularity,regularity_mean,regularity_std,duration,duration_mean,duration_std
+0,anxiety,high,aspire,Afternoon (12pm-6pm),4,2,0,4,1,1,1,0,1
+1,anxiety,high,aspire,Late Night (12am-6am),12,6,1,9,2,2,13,6,5
+2,anxiety,high,aspire,Evening (6pm-12am),10,3,2,6,1,1,6,2,2
+3,anxiety,high,aspire,Morning (6am-12pm),5,2,1,3,0,1,5,2,2
+4,anxiety,high,boostme,Afternoon (12pm-6pm),13,6,5,10,2,3,19,10,6
+5,anxiety,high,boostme,Late Night (12am-6am),27,14,15,14,2,5,28,14,14
+6,anxiety,high,boostme,Evening (6pm-12am),23,12,12,16,3,6,32,16,16
+7,anxiety,high,boostme,Morning (6am-12pm),5,5,0,2,0,1,7,7,0
+8,anxiety,high,dailyfeats,Afternoon (12pm-6pm),78,26,23,48,8,11,50,17,25
+9,anxiety,high,dailyfeats,Late Night (12am-6am),33,8,11,24,4,7,22,6,8
+10,anxiety,high,dailyfeats,Evening (6pm-12am),36,12,17,26,4,8,17,6,9
+11,anxiety,high,dailyfeats,Morning (6am-12pm),10,3,3,8,1,2,7,2,2
+12,anxiety,high,icope,Afternoon (12pm-6pm),2,1,0,2,0,1,0,0,0
+13,anxiety,high,icope,Late Night (12am-6am),7,4,1,4,1,1,4,2,1
+14,anxiety,high,icope,Evening (6pm-12am),9,3,1,6,1,1,7,2,2
+15,anxiety,high,icope,Morning (6am-12pm),6,2,1,3,0,1,9,3,1
+16,anxiety,high,mantra,Afternoon (12pm-6pm),8,4,1,6,1,2,5,2,2
+17,anxiety,high,mantra,Late Night (12am-6am),9,2,1,6,1,1,6,2,1
+18,anxiety,high,mantra,Evening (6pm-12am),16,3,2,11,2,1,6,1,1
+19,anxiety,high,mantra,Morning (6am-12pm),2,1,0,2,0,1,3,2,2
+20,anxiety,high,messages,Afternoon (12pm-6pm),47,12,9,25,4,5,7,2,3
+21,anxiety,high,messages,Late Night (12am-6am),55,14,11,35,6,6,18,4,3
+22,anxiety,high,messages,Evening (6pm-12am),59,15,9,38,6,6,5,1,2
+23,anxiety,high,messages,Morning (6am-12pm),2,1,0,2,0,1,1,0,1
+24,anxiety,high,moveme,Late Night (12am-6am),8,4,4,4,1,1,3,2,2
+25,anxiety,high,moveme,Evening (6pm-12am),5,2,1,3,0,1,2,1,0
+26,anxiety,high,moveme,Morning (6am-12pm),2,2,0,1,0,0,4,4,0
+27,anxiety,high,relax,Afternoon (12pm-6pm),15,5,1,7,1,2,6,2,0
+28,anxiety,high,relax,Late Night (12am-6am),31,8,4,18,3,3,11,3,2
+29,anxiety,high,relax,Evening (6pm-12am),52,13,11,19,3,3,25,6,6
+30,anxiety,high,relax,Morning (6am-12pm),11,4,4,5,1,1,2,1,1
+31,anxiety,high,slumbertime,Afternoon (12pm-6pm),10,5,4,5,1,2,5,2,4
+32,anxiety,high,slumbertime,Late Night (12am-6am),5,2,1,3,0,1,2,1,1
+33,anxiety,high,slumbertime,Evening (6pm-12am),4,2,1,3,0,1,2,1,1
+34,anxiety,high,slumbertime,Morning (6am-12pm),2,2,0,2,0,1,0,0,0
+35,anxiety,high,socialforce,Afternoon (12pm-6pm),5,5,0,3,0,1,0,0,0
+36,anxiety,high,socialforce,Late Night (12am-6am),6,3,3,5,1,2,2,1,0
+37,anxiety,high,socialforce,Evening (6pm-12am),6,6,0,5,1,2,2,2,0
+38,anxiety,high,thoughtchallenger,Afternoon (12pm-6pm),10,5,4,8,1,3,6,3,1
+39,anxiety,high,thoughtchallenger,Late Night (12am-6am),57,14,21,23,4,7,25,6,7
+40,anxiety,high,thoughtchallenger,Evening (6pm-12am),49,16,11,20,3,5,25,8,5
+41,anxiety,high,thoughtchallenger,Morning (6am-12pm),6,3,1,3,0,1,3,2,1
+42,anxiety,high,worryknot,Afternoon (12pm-6pm),4,2,1,3,0,1,2,1,0
+43,anxiety,high,worryknot,Late Night (12am-6am),23,8,7,8,1,2,13,4,5
+44,anxiety,high,worryknot,Evening (6pm-12am),16,5,5,7,1,1,16,5,5
+45,anxiety,high,worryknot,Morning (6am-12pm),11,4,3,4,1,1,4,1,1
+46,anxiety,low,aspire,Afternoon (12pm-6pm),20,10,10,15,2,5,10,5,4
+47,anxiety,low,aspire,Late Night (12am-6am),4,2,1,3,0,1,6,3,3
+48,anxiety,low,aspire,Evening (6pm-12am),21,21,0,14,2,5,8,8,0
+49,anxiety,low,aspire,Morning (6am-12pm),1,1,0,1,0,0,0,0,0
+50,anxiety,low,boostme,Afternoon (12pm-6pm),18,9,4,15,2,4,18,9,11
+51,anxiety,low,boostme,Late Night (12am-6am),2,2,0,2,0,1,2,2,0
+52,anxiety,low,boostme,Evening (6pm-12am),22,11,10,19,2,6,19,10,13
+53,anxiety,low,boostme,Morning (6am-12pm),1,1,0,1,0,0,0,0,0
+54,anxiety,low,dailyfeats,Afternoon (12pm-6pm),5,2,2,5,1,1,0,0,0
+55,anxiety,low,dailyfeats,Late Night (12am-6am),11,4,3,8,1,2,6,2,3
+56,anxiety,low,dailyfeats,Evening (6pm-12am),24,8,10,14,2,3,9,3,2
+57,anxiety,low,dailyfeats,Morning (6am-12pm),34,34,0,28,4,10,7,7,0
+58,anxiety,low,icope,Afternoon (12pm-6pm),8,2,1,8,1,1,4,1,1
+59,anxiety,low,icope,Late Night (12am-6am),2,1,0,2,0,0,1,0,1
+60,anxiety,low,icope,Evening (6pm-12am),14,5,6,14,2,4,6,2,2
+61,anxiety,low,icope,Morning (6am-12pm),1,1,0,1,0,0,0,0,0
+62,anxiety,low,mantra,Afternoon (12pm-6pm),28,7,12,22,3,7,11,3,4
+63,anxiety,low,mantra,Late Night (12am-6am),6,2,1,5,1,1,2,0,1
+64,anxiety,low,mantra,Evening (6pm-12am),31,10,14,19,2,5,15,5,8
+65,anxiety,low,mantra,Morning (6am-12pm),3,1,0,3,0,1,2,1,1
+66,anxiety,low,messages,Afternoon (12pm-6pm),63,13,19,32,4,7,12,2,2
+67,anxiety,low,messages,Late Night (12am-6am),35,9,11,30,4,8,5,1,0
+68,anxiety,low,messages,Evening (6pm-12am),55,14,22,24,3,7,4,1,2
+69,anxiety,low,messages,Morning (6am-12pm),2,2,0,2,0,1,0,0,0
+70,anxiety,low,moveme,Afternoon (12pm-6pm),8,3,2,5,1,1,2,1,1
+71,anxiety,low,moveme,Evening (6pm-12am),11,6,5,9,1,2,7,4,4
+72,anxiety,low,relax,Afternoon (12pm-6pm),62,16,20,22,3,6,21,5,6
+73,anxiety,low,relax,Late Night (12am-6am),14,4,3,7,1,1,10,2,2
+74,anxiety,low,relax,Evening (6pm-12am),72,14,21,27,3,5,23,5,6
+75,anxiety,low,relax,Morning (6am-12pm),10,3,3,4,0,1,8,3,2
+76,anxiety,low,slumbertime,Afternoon (12pm-6pm),66,11,15,36,4,7,14,2,2
+77,anxiety,low,slumbertime,Late Night (12am-6am),63,21,35,27,3,9,0,0,0
+78,anxiety,low,slumbertime,Evening (6pm-12am),66,16,25,27,3,8,11,3,3
+79,anxiety,low,slumbertime,Morning (6am-12pm),47,16,23,18,2,6,2,1,1
+80,anxiety,low,socialforce,Morning (6am-12pm),1,1,0,1,0,0,0,0,0
+81,anxiety,low,thoughtchallenger,Afternoon (12pm-6pm),15,8,9,13,2,4,6,3,4
+82,anxiety,low,thoughtchallenger,Evening (6pm-12am),15,8,6,13,2,4,4,2,0
+83,anxiety,low,thoughtchallenger,Morning (6am-12pm),1,1,0,1,0,0,0,0,0
+84,anxiety,low,worryknot,Afternoon (12pm-6pm),9,3,1,8,1,1,8,3,2
+85,anxiety,low,worryknot,Late Night (12am-6am),8,8,0,3,0,1,4,4,0
+86,anxiety,low,worryknot,Evening (6pm-12am),17,4,3,15,2,3,9,2,2
+87,anxiety,low,worryknot,Morning (6am-12pm),2,1,0,2,0,0,0,0,0
+88,depression,high,aspire,Afternoon (12pm-6pm),2,2,0,2,0,1,0,0,0
+89,depression,high,aspire,Late Night (12am-6am),5,5,0,4,1,2,3,3,0
+90,depression,high,aspire,Evening (6pm-12am),5,5,0,2,0,1,3,3,0
+91,depression,high,aspire,Morning (6am-12pm),3,3,0,2,0,1,1,1,0
+92,depression,high,boostme,Afternoon (12pm-6pm),3,3,0,2,0,1,5,5,0
+93,depression,high,boostme,Evening (6pm-12am),3,3,0,2,0,1,5,5,0
+94,depression,high,dailyfeats,Afternoon (12pm-6pm),11,11,0,6,2,3,4,4,0
+95,depression,high,dailyfeats,Late Night (12am-6am),4,2,1,4,1,1,4,2,3
+96,depression,high,dailyfeats,Evening (6pm-12am),1,1,0,1,0,0,1,1,0
+97,depression,high,dailyfeats,Morning (6am-12pm),4,2,1,3,1,1,3,2,1
+98,depression,high,icope,Afternoon (12pm-6pm),1,1,0,1,0,0,0,0,0
+99,depression,high,icope,Late Night (12am-6am),4,4,0,2,0,1,3,3,0
+100,depression,high,icope,Evening (6pm-12am),7,4,1,4,1,1,6,3,1
+101,depression,high,icope,Morning (6am-12pm),4,2,1,2,0,1,7,4,1
+102,depression,high,mantra,Afternoon (12pm-6pm),3,3,0,2,0,1,4,4,0
+103,depression,high,mantra,Late Night (12am-6am),5,2,2,3,1,1,4,2,1
+104,depression,high,mantra,Evening (6pm-12am),11,4,3,6,2,1,5,2,2
+105,depression,high,mantra,Morning (6am-12pm),2,1,0,2,0,1,3,2,2
+106,depression,high,messages,Afternoon (12pm-6pm),20,10,13,10,2,4,1,0,1
+107,depression,high,messages,Late Night (12am-6am),25,12,12,16,4,6,6,3,0
+108,depression,high,messages,Evening (6pm-12am),26,13,14,17,4,7,1,0,1
+109,depression,high,messages,Morning (6am-12pm),1,1,0,1,0,0,1,1,0
+110,depression,high,moveme,Late Night (12am-6am),1,1,0,1,0,0,0,0,0
+111,depression,high,moveme,Evening (6pm-12am),2,2,0,2,0,1,1,1,0
+112,depression,high,moveme,Morning (6am-12pm),2,2,0,1,0,0,4,4,0
+113,depression,high,relax,Afternoon (12pm-6pm),6,6,0,1,0,0,2,2,0
+114,depression,high,relax,Late Night (12am-6am),12,6,3,7,2,2,4,2,1
+115,depression,high,relax,Evening (6pm-12am),39,20,15,11,3,4,18,9,8
+116,depression,high,relax,Morning (6am-12pm),8,8,0,2,0,1,2,2,0
+117,depression,high,slumbertime,Afternoon (12pm-6pm),8,8,0,4,1,2,5,5,0
+118,depression,high,slumbertime,Late Night (12am-6am),3,2,1,2,0,1,1,0,1
+119,depression,high,slumbertime,Evening (6pm-12am),1,1,0,1,0,0,2,2,0
+120,depression,high,slumbertime,Morning (6am-12pm),2,2,0,2,0,1,0,0,0
+121,depression,high,thoughtchallenger,Afternoon (12pm-6pm),2,2,0,1,0,0,2,2,0
+122,depression,high,thoughtchallenger,Late Night (12am-6am),11,6,4,4,1,1,8,4,1
+123,depression,high,thoughtchallenger,Evening (6pm-12am),22,11,8,8,2,3,15,8,6
+124,depression,high,thoughtchallenger,Morning (6am-12pm),6,3,1,3,1,1,3,2,1
+125,depression,high,worryknot,Afternoon (12pm-6pm),1,1,0,1,0,0,1,1,0
+126,depression,high,worryknot,Late Night (12am-6am),7,7,0,2,0,1,4,4,0
+127,depression,high,worryknot,Evening (6pm-12am),11,6,6,4,1,1,8,4,6
+128,depression,high,worryknot,Morning (6am-12pm),8,4,4,3,1,1,2,1,1
+129,depression,low,aspire,Afternoon (12pm-6pm),22,7,8,17,2,4,11,4,4
+130,depression,low,aspire,Late Night (12am-6am),11,4,3,8,1,2,16,5,5
+131,depression,low,aspire,Evening (6pm-12am),26,9,11,18,2,4,11,4,4
+132,depression,low,aspire,Morning (6am-12pm),3,2,1,2,0,0,4,2,3
+133,depression,low,boostme,Afternoon (12pm-6pm),28,9,3,23,2,4,32,11,9
+134,depression,low,boostme,Late Night (12am-6am),29,10,12,16,2,4,30,10,12
+135,depression,low,boostme,Evening (6pm-12am),42,14,9,33,3,6,46,15,14
+136,depression,low,boostme,Morning (6am-12pm),6,3,3,3,0,1,7,4,5
+137,depression,low,dailyfeats,Afternoon (12pm-6pm),72,18,24,47,5,9,46,12,22
+138,depression,low,dailyfeats,Late Night (12am-6am),40,8,10,28,3,5,24,5,7
+139,depression,low,dailyfeats,Evening (6pm-12am),59,12,13,39,4,7,25,5,6
+140,depression,low,dailyfeats,Morning (6am-12pm),40,20,20,33,3,9,11,6,2
+141,depression,low,icope,Afternoon (12pm-6pm),9,2,1,9,1,1,4,1,1
+142,depression,low,icope,Late Night (12am-6am),5,2,1,4,0,1,2,1,1
+143,depression,low,icope,Evening (6pm-12am),16,4,5,16,2,3,7,2,2
+144,depression,low,icope,Morning (6am-12pm),3,2,1,2,0,0,2,1,1
+145,depression,low,mantra,Afternoon (12pm-6pm),33,7,10,26,3,6,12,2,3
+146,depression,low,mantra,Late Night (12am-6am),10,2,1,8,1,1,4,1,1
+147,depression,low,mantra,Evening (6pm-12am),36,7,11,24,2,5,16,3,6
+148,depression,low,mantra,Morning (6am-12pm),3,1,0,3,0,0,2,1,1
+149,depression,low,messages,Afternoon (12pm-6pm),90,13,16,47,5,6,18,3,2
+150,depression,low,messages,Late Night (12am-6am),65,11,11,49,5,8,17,3,3
+151,depression,low,messages,Evening (6pm-12am),88,15,17,45,4,7,8,1,2
+152,depression,low,messages,Morning (6am-12pm),3,2,1,3,0,1,0,0,0
+153,depression,low,moveme,Afternoon (12pm-6pm),8,3,2,5,0,1,2,1,1
+154,depression,low,moveme,Late Night (12am-6am),7,7,0,3,0,1,3,3,0
+155,depression,low,moveme,Evening (6pm-12am),14,5,4,10,1,2,8,3,3
+156,depression,low,relax,Afternoon (12pm-6pm),71,12,17,28,3,5,25,4,5
+157,depression,low,relax,Late Night (12am-6am),33,6,5,18,2,2,17,3,2
+158,depression,low,relax,Evening (6pm-12am),85,12,18,35,4,5,30,4,5
+159,depression,low,relax,Morning (6am-12pm),13,3,3,7,1,1,8,2,2
+160,depression,low,slumbertime,Afternoon (12pm-6pm),68,10,14,37,4,7,14,2,2
+161,depression,low,slumbertime,Late Night (12am-6am),65,16,30,28,3,8,1,0,0
+162,depression,low,slumbertime,Evening (6pm-12am),69,14,23,29,3,7,11,2,3
+163,depression,low,slumbertime,Morning (6am-12pm),47,16,23,18,2,5,2,1,1
+164,depression,low,socialforce,Afternoon (12pm-6pm),5,5,0,3,0,1,0,0,0
+165,depression,low,socialforce,Late Night (12am-6am),6,3,3,5,0,1,2,1,0
+166,depression,low,socialforce,Evening (6pm-12am),6,6,0,5,0,2,2,2,0
+167,depression,low,socialforce,Morning (6am-12pm),1,1,0,1,0,0,0,0,0
+168,depression,low,thoughtchallenger,Afternoon (12pm-6pm),23,8,7,20,2,4,10,3,3
+169,depression,low,thoughtchallenger,Late Night (12am-6am),46,23,31,19,2,6,17,8,11
+170,depression,low,thoughtchallenger,Evening (6pm-12am),42,14,12,25,2,5,14,5,5
+171,depression,low,thoughtchallenger,Morning (6am-12pm),1,1,0,1,0,0,0,0,0
+172,depression,low,worryknot,Afternoon (12pm-6pm),12,3,1,10,1,1,9,2,2
+173,depression,low,worryknot,Late Night (12am-6am),24,8,7,9,1,2,13,4,5
+174,depression,low,worryknot,Evening (6pm-12am),22,4,3,18,2,3,17,3,3
+175,depression,low,worryknot,Morning (6am-12pm),5,2,1,3,0,0,2,1,1
+176,anxiety,high,moveme,Afternoon (12pm-6pm),,,,0,0,0,0,0,0
+177,anxiety,high,socialforce,Morning (6am-12pm),,,,0,0,0,0,0,0
+178,anxiety,low,moveme,Late Night (12am-6am),,,,0,0,0,0,0,0
+179,anxiety,low,moveme,Morning (6am-12pm),,,,0,0,0,0,0,0
+180,anxiety,low,socialforce,Late Night (12am-6am),,,,0,0,0,0,0,0
+181,anxiety,low,socialforce,Afternoon (12pm-6pm),,,,0,0,0,0,0,0
+182,anxiety,low,socialforce,Evening (6pm-12am),,,,0,0,0,0,0,0
+183,anxiety,low,thoughtchallenger,Late Night (12am-6am),,,,0,0,0,0,0,0
+184,depression,high,boostme,Late Night (12am-6am),,,,0,0,0,0,0,0
+185,depression,high,boostme,Morning (6am-12pm),,,,0,0,0,0,0,0
+186,depression,high,moveme,Afternoon (12pm-6pm),,,,0,0,0,0,0,0
+187,depression,high,socialforce,Late Night (12am-6am),,,,0,0,0,0,0,0
+188,depression,high,socialforce,Morning (6am-12pm),,,,0,0,0,0,0,0
+189,depression,high,socialforce,Afternoon (12pm-6pm),,,,0,0,0,0,0,0
+190,depression,high,socialforce,Evening (6pm-12am),,,,0,0,0,0,0,0
+191,depression,low,moveme,Morning (6am-12pm),,,,0,0,0,0,0,0
