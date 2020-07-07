@@ -10,6 +10,7 @@ cp index.html war
 cp favicon.ico war
 cp -r WEB-INF war
 cp -r img war
+cp -r video war
 cp -r css war
 cp -r vendor war
 cd war
