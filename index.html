@@ -4,19 +4,6 @@
 <head>
   <!-- Written by Noah French in 2019, featuring some helpful JavaScript snippets from Dan Funk -->
 
-  <!-- Anti-flicker snippet (recommended)  -->
-  <style>
-    .async-hide {
-      opacity: 0 !important
-    }
-  </style>
-  <script>(function (a, s, y, n, c, h, i, d, e) {
-      s.className += ' ' + y; h.start = 1 * new Date;
-      h.end = i = function () { s.className = s.className.replace(RegExp(' ?' + y), '') };
-      (a[n] = a[n] || []).hide = h; setTimeout(function () { i(); h.end = null }, c); h.timeout = c;
-    })(window, document.documentElement, 'async-hide', 'dataLayer', 4000,
-      { 'OPT_CONTAINER_ID': true });</script>
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <meta name="description"
@@ -35,6 +22,7 @@
 
     gtag('config', 'UA-77944674-5');
   </script>
+
 
   <!-- End Google Analytics -->
 
@@ -139,7 +127,7 @@
   
   <div class="row" style="padding-bottom:20px;">
     <div class="col-md-12 text-center">
-      <a href="https://mindtrails.virginia.edu/kaiser/public/kaiser"
+      <a id='getStartedLink' href="javascript:getStarted()"
         class="btn btn-default btn-lg btn-primary kaiser-thinking-btn account-create">Get
         Started Now</a>
     </div>
@@ -201,7 +189,7 @@
             more about the science</a>
         </p>
         <div class="text-center">
-          <a href="https://mindtrails.virginia.edu/kaiser/public/kaiser"
+          <a id="StartTrainingLink" href="javascript:getStarted()"
             class="btn btn-primary btn-lg kaiser-thinking-btn">Start
             Training</a>
         </div>
@@ -229,7 +217,7 @@
             target="_blank">resources for coping with</a>
           racial injustice and discrimination.</p>
           <div class="text-center">
-          <a href="https://mindtrails.virginia.edu/kaiser/public/kaiser"
+          <a id="getStarted2Link"  href="javascript:getStarted()"
             class="btn btn-primary kaiser-thinking-btn btn-lg account-create">Get Started</a>
         </div>
       </div>
@@ -504,7 +492,7 @@
       </div>
     </div>
     <div class="text-center">
-      <a href="https://mindtrails.virginia.edu/kaiser/public/kaiser"
+      <a id="getStarted3Link"  href="javascript:getStarted()"
         class="btn btn-primary btn-lg kaiser-thinking-btn">Get
         Started</a>
     </div>
@@ -543,6 +531,30 @@
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <script language="javascript" type="text/javascript">
+    <!-- Save the condition in local storage, so we don't loose track of it if they look around the site.-->
+
+    window.onload = function() {
+      try {
+        const url_string = (window.location.href).toLowerCase();
+        const url = new URL(url_string);
+        const condition = url.searchParams.get("condition");
+        if(condition) {
+          localStorage.setItem('condition', condition);
+        }
+      } catch (err) {
+        console.log("Issues with Parsing URL Parameter's - " + err);
+      }
+    };
+
+    const getStarted = function() {
+      const condition = localStorage.getItem('condition');
+      location.href = 'https://mindtrails.virginia.edu/kaiser/public/kaiser?condition=' + condition;
+    }
+
+  </script>
+
+
   <!-- Header Carousel Script -->
   <script type="text/javascript">
     // Original JavaScript code by Chirp Internet: www.chirp.com.au
@@ -566,20 +578,17 @@
       Array.from(objects).map((item) => {
         // Start loading image
         const img = new Image();
-        console.log("loading full res image:", item.dataset.src);
         img.src = item.dataset.src;
         // Once image is loaded replace the src of the HTML element
         img.onload = () => {
           item.classList.remove('asyncImage');
           if (item.classList.contains('masthead-img')) {
-            console.log("it is a masthead");
             return item.style.backgroundImage = `linear-gradient(
                                                   to right,
                                                   rgba(0, 0, 0, 0),
                                                   rgba(0, 0, 0, 0.9)
                                                  ), url(${item.dataset.src})`;
           } else {
-            console.log("it is NOT a masthead");
             return item.nodeName === 'IMG' ?
               item.src = item.dataset.src :
               item.style.backgroundImage = `url(${item.dataset.src})`;
@@ -588,9 +597,6 @@
       });
     })();
   </script>
-
-  <!-- Custom JavaScript  -->
-  <script src="js/landing-page.js"></script>
 </body>
 
 </html>
