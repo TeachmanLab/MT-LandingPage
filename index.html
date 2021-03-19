@@ -13,18 +13,16 @@
   <script language="javascript" type="text/javascript">
     <!-- Save the condition in local storage, so we don't loose track of it if they look around the site.-->
 
-    window.onload = function() {
-      try {
-        const url_string = window.location.href;
-        const url = new URL(url_string);
-        const condition = url.searchParams.get("condition");
-        if(condition) {
-          localStorage.setItem('condition', condition);
-        }
-      } catch (err) {
-        console.log("Issues with Parsing URL Parameter's - " + err);
+    try {
+      const url_string = window.location.href;
+      const url = new URL(url_string);
+      const condition = url.searchParams.get("condition");
+      if(condition) {
+        localStorage.setItem('condition', condition);
       }
-    };
+    } catch (err) {
+      console.log("Issues with Parsing URL Parameter's - " + err);
+    }
 
     const getStarted = function() {
       const condition = localStorage.getItem('condition');
