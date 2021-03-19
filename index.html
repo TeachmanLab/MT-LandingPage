@@ -10,6 +10,30 @@
     content="A free online tool to help people reduce anxiety, provided by the University of Virginia." />
   <meta name="author" content="University of Virginia" />
 
+  <script language="javascript" type="text/javascript">
+    <!-- Save the condition in local storage, so we don't loose track of it if they look around the site.-->
+
+    window.onload = function() {
+      try {
+        const url_string = window.location.href;
+        const url = new URL(url_string);
+        const condition = url.searchParams.get("condition");
+        if(condition) {
+          localStorage.setItem('condition', condition);
+        }
+      } catch (err) {
+        console.log("Issues with Parsing URL Parameter's - " + err);
+      }
+    };
+
+    const getStarted = function() {
+      const condition = localStorage.getItem('condition');
+      location.href = 'https://mindtrails.virginia.edu/kaiser/public/kaiser?condition=' + condition;
+    }
+
+  </script>
+
+
   <title>MindTrails</title>
 
   <!-- Google Analytics -->
@@ -530,29 +554,6 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-  <script language="javascript" type="text/javascript">
-    <!-- Save the condition in local storage, so we don't loose track of it if they look around the site.-->
-
-    window.onload = function() {
-      try {
-        const url_string = (window.location.href).toLowerCase();
-        const url = new URL(url_string);
-        const condition = url.searchParams.get("condition");
-        if(condition) {
-          localStorage.setItem('condition', condition);
-        }
-      } catch (err) {
-        console.log("Issues with Parsing URL Parameter's - " + err);
-      }
-    };
-
-    const getStarted = function() {
-      const condition = localStorage.getItem('condition');
-      location.href = 'https://mindtrails.virginia.edu/kaiser/public/kaiser?condition=' + condition;
-    }
-
-  </script>
 
 
   <!-- Header Carousel Script -->
