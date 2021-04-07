@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Written by Noah French in 2019, featuring some helpful JavaScript snippets from Dan Funk -->
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description"
+    content="A free online tool to help people reduce anxiety, provided by the University of Virginia." />
+  <meta name="author" content="University of Virginia" />
+
+  <script language="javascript" type="text/javascript">
+    <!-- Save the condition in local storage, so we don't loose track of it if they look around the site.-->
+
+    try {
+      const url_string = window.location.href;
+      const url = new URL(url_string);
+      const condition = url.searchParams.get("condition");
+      if(condition) {
+        localStorage.setItem('condition', condition);
+      }
+    } catch (err) {
+      console.log("Issues with Parsing URL Parameter's - " + err);
+    }
+
+    const getStarted = function() {
+      const condition = localStorage.getItem('condition');
+      location.href = 'https://mindtrails.virginia.edu/kaiser/public/kaiser?condition=' + condition;
+    }
+
+  </script>
+
+
+  <title>MindTrails</title>
+
+  <!-- Google Analytics -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-77944674-5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-77944674-5');
+  </script>
+
+
+  <!-- End Google Analytics -->
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+
+  <!-- Custom styles for this template -->
+  <link href="css/landing-page.min.css" rel="stylesheet" />
+
+  <link rel="icon" href="favicon.ico" type="image/ico" />
+
+  <!-- MindTrails font! -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav>
+    <a href=""><img src="img/logo.png" alt="MindTrails" class="logo-img" /></a>
+    <div class="tabs">
+      <a href="https://mindtrails.virginia.edu/kaiser/public/about" class="tab">Sobre MindTrails</a>
+      <a href="https://mindtrails.virginia.edu/kaiser/public/faq" class="tab">Preguntas más frecuentes</a>
+      <a href="https://mindtrails.virginia.edu/kaiser/public/researchSupport" class="tab">La cienca de MindTrails</a>
+      <a href="https://mindtrails.virginia.edu/kaiser/public/resources" class="tab">Recursos de salud mental</a>
+      <a href="https://mindtrails.virginia.edu/kaiser/public/contact" class="tab">Contáctanos</a>
+      <a href="https://mindtrails.virginia.edu/kaiser/public/team" class="tab">Conoce al equipo</a>
+      <br />
+      <a href="https://mindtrails.virginia.edu/kaiser/login" class="btn btn-primary kaiser-thinking-btn login-btn">Log In</a>
+      <div style="float: right; padding: 15px 10px 0 0;">
+        Already Participating?
+      </div>
+    </div>
+    <div class="hamburger btn-group">
+      <button type="button" class="hamburger-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="img/hamburger.png" alt="MENU" class="hamburger-icon" />
+      </button>
+      <div class="dropdown-menu dropdown-menu-right">
+        <a href="https://mindtrails.virginia.edu/kaiser/public/about" class="dropdown-item">Sobre MindTrails</a>
+        <a href="https://mindtrails.virginia.edu/kaiser/public/faq" class="dropdown-item">Preguntas más frecuentes</a>
+        <a href="https://mindtrails.virginia.edu/kaiser/public/researchSupport" class="dropdown-item">La cienca de MindTrails</a>
+        <a href="https://mindtrails.virginia.edu/kaiser/public/resources" class="dropdown-item">Recursos de salud mental</a>
+        <a href="https://mindtrails.virginia.edu/kaiser/public/contact" class="dropdown-item">Contáctanos</a>
+        <a href="https://mindtrails.virginia.edu/kaiser/public/team" class="dropdown-item">Conoce al equipo</a>
+        <a href="https://mindtrails.virginia.edu/kaiser/login" class="dropdown-item">Log In</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="yellow-sliver"></div>
+
+  <!-- Masthead -->
+  <div id="stage">
+    <header class="asyncImage masthead-img banner0" data-src="img/banner0.jpg"></header>
+    <header class="asyncImage masthead-img banner1" data-src="img/banner1.jpg"></header>
+    <header class="asyncImage masthead-img banner2" data-src="img/banner2.jpg"></header>
+    <header class="asyncImage masthead-img banner3" data-src="img/banner3.jpg"></header>
+    <header class="asyncImage masthead-img banner4" data-src="img/banner4.jpg"></header>
+    <header class="asyncImage masthead-img banner5" data-src="img/banner5.jpg"></header>
+    <header class="asyncImage masthead-img banner6" data-src="img/banner6.jpg"></header>
+    <header class="asyncImage masthead-img banner7" data-src="img/banner7.jpg"></header>
+    <header class="asyncImage masthead-img banner8" data-src="img/banner8.jpg"></header>
+    <div class="masthead-content text-right">
+      <div class="hero-title">
+        <div class="white">Comprende tu pensamiento.</div>
+        <div class="bright-blue">Siéntate menos ansioso.</div>
+      </div>
+      <p class="hero-text light-yellow">
+        Únete gratis para cambiar tu pensamiento ansioso.</br>
+        Lo único que necesitas es una computadora, tablet o un smartphone.
+      </p>
+    </div>
+  </div>
+
+  <div class="spacer"></div>
+
+  <div class="yellow-sliver"></div>
+  <!-- Credits -->
+  <div class="container credits">
+    <div class="row">
+      <div class="col">Un programa de</div>
+      <div class="col">Patrocinado por</div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <img src="img/universityofvirginia.png" alt="University of Virginia" style="width: 65%" />
+      </div>
+      <div class="col">
+        <img src="img/nimh.png" alt="National Institute of Mental Health" style="width: 80%" />
+      </div>
+    </div>
+  </div>
+
+  <div class="gray-sliver"></div>
+  
+  <div class="row" style="padding-bottom:20px;">
+    <div class="col-md-12 text-center">
+      <a id='getStartedLink' href="javascript:getStarted()"
+        class="btn btn-default btn-lg btn-primary kaiser-thinking-btn account-create">
+        Get Started Now</a>
+    </div>
+  </div>
+
+  <div class="gray-sliver"></div>
+
+  <!-- How it Works -->
+  <div class="container" style="padding-bottom: 40px">
+    <div class="row">
+      <div class="col-md-6">
+        <h1 class="bright-blue">¿Cómo funciona?</h1>
+        <p>Sólo tres pasos sencillos.</p>
+        <div class="row">
+          <h1 class="col-1 logo-blue">1</h1>
+          <div class="col-11">
+            <b>Cuéntanos acerca de tí.</b><br />
+            Te pediremos que contestes algunas preguntas sobre quién eres y cómo te sientes.
+          </div>
+          <div class="col-12" style="height: 15px"></div>
+          <h1 class="col-1 logo-blue">2</h1>
+          <div class="col-11">
+            <b>Imagínate en diferentes situaciones.</b><br />
+            Se te pedirá que te imagines en situaciones con resultados inciertos.
+          </div>
+          <div class="col-12" style="height: 15px"></div>
+          <h1 class="col-1 logo-blue">3</h1>
+          <div class="col-11">
+            <b>Piensa de una nueva manera.</b><br />
+            Como vayas leyendo las situaciones que pudieran causar ansiedad, te ayudaremos a pensar en ellas de una manera más saludable.
+          </div>
+          <div class="col-12" style="height: 15px"></div>
+        </div>
+      </div>
+      <div class="col-md-6 howitworks-content">
+        <img class="howitworks-img asyncImage" data-src="img/howitworks.png" src="img/low_res/howitworks.png" />
+      </div>
+    </div>
+  </div>
+
+  <!-- What is it? -->
+  <div class="container" style="padding-bottom: 40px">
+
+    <div class="row">
+      <div class="col-md-6">
+        <img src="img/whatisbias.jpg" class="whatisbias-img" />
+      </div>
+      <div class="col-md-6">
+        <h1 class="bright-blue">¿Qué es entrenamiento de sesgos cognitivos?</h1>
+        <p>
+          Las investigaciones muestran que las personas propensas a la ansiedad tienden a pensar negativamente sobre las situaciones.
+          <b>El entrenamiento de MindTrails te presentará con ejercicios para que pienses en situaciones de nuevas formas.</b>
+          Esto motiva a más estilos de pensamiento flexibles en tu vida diaria que pueden romper los patrones negativos de tu pensamiento.
+          <br /><a href="https://mindtrails.virginia.edu/kaiser/public/researchSupport">
+          Aprende más sobre la ciencia</a>
+        </p>
+       a <div class="text-center">
+          <a id="StartTrainingLink" href="javascript:getStarted()"
+            class="btn btn-primary btn-lg kaiser-thinking-btn">
+            Start Training</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Programs -->
+  <div class="container" style="padding-bottom: 40px">
+    <div class="row">
+      <div class="col-md-12">
+        <h1 class="bright-blue">¿A quién puede ayudar MindTrails?</h1>
+        <p>MindTrails es un programa basado en evidencia diseñado para ayudar a personas a pensar de una manera diferente
+          sobre situaciones que pueden causar ansiedad. Este programa es gratis como parte de un estudio financiado por el
+          Instituto Nacional de Salud Mental y ha sido completado por personas de todas las identidades raciales y étnicas de
+          muchos países alrededor del mundo. El programa se enfoca en la ansiedad que las personas pueden experimentar con
+          respecto a situaciones sociales, preocupaciones físicas, trabajo y COVID-19 (incluyendo poblaciones con ansiedad
+          generalizada, ansiedad social y trastorno de pánico y ansiedad alta que no es parte de un trastorno).</p>
+
+        <p>Invitamos a todos los adultos elegibles a participar en MindTrails. Recalcamos que nuestro programa no ha sido estudiado
+          como una herramienta para ayudar a personas lidiar con el trauma, incluyendo la injusticia racial y la discriminación, o la
+          violencia hacia personal o hacia los demás. Alentamos a las personas que enfrentan un trauma a buscar otros recursos, como
+        <a href="https://www.apa.org/ptsd-guideline/patients-and-families" target="_blank">las pautas de PTSD de la APA para pacientes y familias</a>
+          y los recursos de la Alianza Nacional sobre Enfermedades Mentales
+        <a href="https://www.nami.org/About-NAMI/NAMI-News/2020/NAMI-s-Statement-On-Recent-Racist-Incidents-and-Mental-Health-Resources-for-African-Americans" target="_blank">
+          para enfrentar la injusticia racial y la discriminación</a>.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Note: The following two sections not featured on Spanish language landing page
+
+       Ignite Mental Health Video
+  <div class="container" style="padding-bottom: 40px">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="bright-blue">Dr. Teachman Speaks with Ignite Mental Health About MindTrails</h2>
+        <div class="embed-responsive embed-responsive-16by9">
+          <video class="embed-responsive-item" src="video/ignite_mindtrails.mp4" controls></video>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+      In the News
+  <header class="press text-center bright-blue-background" style="margin-bottom: 40px">
+    <div class="container">
+      <h1 class="white text-left" style="padding-top: 20px;">
+        MindTrails in the News
+      </h1>
+      <div id="pressReleaseCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+
+              Slide One - Set the background image for this slide in the line below
+
+          <div class="carousel-item active">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/roller_coaster.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>ADAA Webinar</h3>
+              <p class="press-text">
+                Managing the Roller Coaster of Emotions During COVID-19
+              </p>
+              <a href="https://adaa.org/webinar/consumer/managing-roller-coaster-emotions-during-covid-19"
+                class="press-text">
+                Watch the full video
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/handwash.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>The Conversation</h3>
+              <p class="press-text">
+                Feeling overwhelmed? Approach coronavirus as a challenge to be met, not a threat to be feared
+              </p>
+              <a href="https://theconversation.com/feeling-overwhelmed-approach-coronavirus-as-a-challenge-to-be-met-not-a-threat-to-be-feared-134211"
+                class="press-text">
+                Read the full article
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/upside_down.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>UVA College Spotlight Speaker Series</h3>
+              <p class="press-text">
+                Managing anxiety when the world is upside down
+              </p>
+              <a href="https://www.facebook.com/watch/live/?v=244638963558139&ref=watch_permalink" class="press-text">
+                Watch the full video
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/worried_woman.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>ADAA</h3>
+              <p class="press-text">
+                Why Anxiety Should Not Be Feared
+              </p>
+              <a href="https://adaa.org/learn-from-us/from-the-experts/blog-posts/consumer/why-anxiety-should-not-be-feared"
+                class="press-text">
+                Read the full article
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/covid.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>UVA Webinar</h3>
+              <p class="press-text">
+                Managing Mental Health During Covid-19
+              </p>
+              <a href="https://provost.virginia.edu/subsite/faculty-development/managing-mental-health-during-covid-19"
+                class="press-text">
+                Watch the full video
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/podcast.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>NPR Radio IQ WVTF</h3>
+              <p class="press-text">
+                UVA Offers Free Online Programs for Anxiety
+              </p>
+              <a href="https://www.wvtf.org/post/uva-offers-free-online-programs-anxiety#stream/0" class="press-text">
+                Read the full article
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/hill_article.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>The Hill</h3>
+              <p class="press-text">
+                Phones Can Help Our Anxiety and Not Just Add to It
+              </p>
+              <a href="https://thehill.com/opinion/healthcare/465519-phones-can-help-our-anxiety-and-not-just-add-to-it"
+                class="press-text">
+                Read the full article
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/uva_today.jpg" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>UVA Today</h3>
+              <p class="press-text">
+                Negativity, Be Gone: This New UVA Online Tool Can Retrain Your
+                Brain
+              </p>
+              <a href="https://news.virginia.edu/content/negativity-be-gone-new-uva-online-tool-can-retrain-your-brain"
+                class="press-text">
+                Read the full article
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/abc_big_ideas.jpg" style="width: 100%;" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>ABC Radio National</h3>
+              <p class="press-text">
+                Online Help for Anxiety
+              </p>
+              <a href="https://www.abc.net.au/radionational/programs/bigideas/online-help-for-anxiety/10970416"
+                class="press-text">
+                Listen to Podcast
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/podcast.jpg" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>WINA News Radio</h3>
+              <p class="press-text">
+                Bethany Teachman: New Online Tool to Help Banish Negativity
+              </p>
+              <a href="http://wina.com/podcasts/bethany-teachman-new-online-tool-to-help-banish-negativity/"
+                class="press-text">
+                Listen to Podcast
+              </a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="overlay"></div>
+            <img class="d-block" src="img/mental-health.jpg" />
+            <div class="carousel-caption trickcenter d-none d-block">
+              <h3>Psychology Today</h3>
+              <p class="press-text">
+                The Catastrophic Effects of Mental Health Stigma
+              </p>
+              <a href="https://www.psychologytoday.com/us/blog/nurturing-self-compassion/201705/the-catastrophic-effects-mental-health-stigma"
+                class="press-text">
+                Read the full article
+              </a>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#pressReleaseCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#pressReleaseCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+  </header> -->
+
+  <!-- Our Team -->
+  <div class="container" style="padding-bottom: 30px">
+    <h1 class="bright-blue">Nuestro equipo</h1>
+    <!-- This image is displaying super washed-out for some reason... -->
+    <img class="asyncImage" src="img/low_res/team.jpg" data-src="img/team.jpg"
+      style="width: 100%; padding-bottom: 10px;" />
+    <p>
+      Somos un equipo de psicólogos, ingenieros e informáticos de la Universidad de Virginia
+      trabajando juntos y utilizando las últimas investigaciones para crear nuevos programas
+      para reducir el pensamiento ansioso.<br />
+      <a href="https://mindtrails.virginia.edu/kaiser/public/team">Conoce al equipo</a>
+    </p>
+  </div>
+
+  <!-- Icons Grid -->
+  <div class="container features-icons text-center">
+    <h1 class="bright-blue text-center">
+      Los programas MindTrails están diseñados para ayudar
+    </h1>
+    <div class="row">
+      <div class="col-md-4 col-6">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <i class="icon-lock m-auto logo-blue"></i>
+          </div>
+          <h3><b>Confidencial</b></h3>
+          <p>Protegemos tu información personal</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-6">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <i class="icon-emotsmile m-auto logo-blue"></i>
+          </div>
+          <h3><b>Eficaz</b></h3>
+          <p>Las investigaciones sugieren que nuestros programas reducen el pensamiento ansioso</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-6">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <i class="icon-chemistry m-auto logo-blue"></i>
+          </div>
+          <h3><b>Científico</b></h3>
+          <p>Nuestros métodos son desarrollados por investigadores</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-6">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <i class="icon-speedometer m-auto logo-blue"></i>
+          </div>
+          <h3><b>Rápido</b></h3>
+          <p>Las sesiones toman entre 10 y 20 minutos para completar</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-6">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <i class="icon-wallet m-auto logo-blue"></i>
+          </div>
+          <h3><b>Gratis</b></h3>
+          <p>No cuesta nada para participar</p>
+        </div>
+      </div>
+      <div class="col-md-4 col-6">
+        <div class="features-icons-item mx-auto mb-5 mb-lg-0 mb-lg-3">
+          <div class="features-icons-icon d-flex">
+            <i class="icon-puzzle m-auto logo-blue"></i>
+          </div>
+          <h3><b>Dinámica</b></h3>
+          <p>Tu participación mejorará estos programas para ayudar a otros</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center">
+      <a id="getStarted3Link"  href="javascript:getStarted()"
+        class="btn btn-primary btn-lg kaiser-thinking-btn">
+        Get Started</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer bg-dark">
+      <div class="container text-center">
+        <a href="https://mindtrails.virginia.edu/kaiser/public/about" class="footer-tab">Sobre MindTrails</a>
+        <a href="https://mindtrails.virginia.edu/kaiser/public/faq" class="footer-tab">Preguntas más frecuentes</a>
+        <a href="https://mindtrails.virginia.edu/kaiser/public/researchSupport" class="footer-tab">La cienca de MindTrails</a>
+        <a href="https://mindtrails.virginia.edu/kaiser/public/resources" class="footer-tab">Recursos de salud mental</a>
+        <a href="https://mindtrails.virginia.edu/kaiser/public/contact" class="footer-tab">Contáctanos</a>
+        <a href="https://mindtrails.virginia.edu/kaiser/public/team" class="footer-tab">Conoce al equipo</a>
+      </div>
+    </div>
+    <div class="container text-center">
+      <a href="https://mindtrails.virginia.edu/kaiser/public/privacy" class="legal-text">Política de privacidad</a>
+      <a href="https://mindtrails.virginia.edu/kaiser/public/disclaimer" class="legal-text" style="padding-left: 20px">Términos y condiciones</a>
+      <p class="legal-text" style="margin-bottom: 0">
+        © Copyright 2021 por MindTrails • Todos los derechos reservados
+      </p>
+      <p class="legal-text">
+        Aprobado por la Junta de Revisión Institucional de la Universidad de Virginia para las Ciencias Sociales
+        y del Comportamiento (IRB-SBS) con el número de protocolo 4117.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- Header Carousel Script -->
+  <script type="text/javascript">
+    // Original JavaScript code by Chirp Internet: www.chirp.com.au
+    // Please acknowledge use of this code by including this header.
+
+    window.addEventListener("DOMContentLoaded", function (e) {
+      var stage = document.getElementById("stage");
+      var fadeComplete = function (e) {
+        stage.appendChild(arr[0]);
+      };
+      var arr = stage.getElementsByTagName("header");
+      for (var i = 0; i < arr.length; i++) {
+        arr[i].addEventListener("animationend", fadeComplete, false);
+      }
+    }, false);
+
+    (() => {
+      'use strict';
+      // Page is loaded
+      const objects = document.getElementsByClassName('asyncImage');
+      Array.from(objects).map((item) => {
+        // Start loading image
+        const img = new Image();
+        img.src = item.dataset.src;
+        // Once image is loaded replace the src of the HTML element
+        img.onload = () => {
+          item.classList.remove('asyncImage');
+          if (item.classList.contains('masthead-img')) {
+            return item.style.backgroundImage = `linear-gradient(
+                                                  to right,
+                                                  rgba(0, 0, 0, 0),
+                                                  rgba(0, 0, 0, 0.9)
+                                                 ), url(${item.dataset.src})`;
+          } else {
+            return item.nodeName === 'IMG' ?
+              item.src = item.dataset.src :
+              item.style.backgroundImage = `url(${item.dataset.src})`;
+          }
+        };
+      });
+    })();
+  </script>
+</body>
+
+</html>
