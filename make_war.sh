@@ -7,6 +7,7 @@
 rm -rf war
 mkdir war
 cp index.html war
+cp index_es.html war
 cp favicon.ico war
 cp -r WEB-INF war
 cp -r img war
