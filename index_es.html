@@ -10,27 +10,7 @@
     content="A free online tool to help people reduce anxiety, provided by the University of Virginia." />
   <meta name="author" content="University of Virginia" />
 
-  <script language="javascript" type="text/javascript">
-    <!-- Save the condition in local storage, so we don't loose track of it if they look around the site.-->
-
-    try {
-      const url_string = window.location.href;
-      const url = new URL(url_string);
-      const condition = url.searchParams.get("condition");
-      if(condition) {
-        localStorage.setItem('condition', condition);
-      }
-    } catch (err) {
-      console.log("Issues with Parsing URL Parameter's - " + err);
-    }
-
-    const getStarted = function() {
-      const condition = localStorage.getItem('condition');
-      location.href = 'https://mindtrails.virginia.edu/spanish/public/spanish?condition=' + condition;
-    }
-
-  </script>
-
+  <script language="javascript" type="text/javascript" src="param_passer.js"></script>
 
   <title>MindTrails</title>
 
