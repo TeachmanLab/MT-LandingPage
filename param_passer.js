@@ -19,7 +19,7 @@ try {
 }
 
 const getStarted = function() {
-    const myUrlWithParams = new URL('http://ec2-3-145-192-191.us-east-2.compute.amazonaws.com:8080/spanish/public/eligibility');
+    const myUrlWithParams = new URL('https://mindtrails.virginia.edu/spanish/public/eligibility');
 
     myUrlWithParams.searchParams.append("cp", localStorage.getItem('campaign'));
     myUrlWithParams.searchParams.append("utm_source", localStorage.getItem('utm_source'));
