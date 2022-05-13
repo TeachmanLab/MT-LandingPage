@@ -1,4 +1,4 @@
-<!-- Save the campaign in local storage, so we don't loose track of it if they look around the site.-->
+<!-- Save the campaign in local storage, so we don't lose track of it if they look around the site.-->
 
 try {
     const url_string = window.location.href;
@@ -19,7 +19,7 @@ try {
 }
 
 const getStarted = function() {
-    const myUrlWithParams = new URL('https://mindtrails.virginia.edu/spanish/public/eligibility');
+    const myUrlWithParams = new URL('https://mindtrails.virginia.edu/spanish/eligibility/');
 
     myUrlWithParams.searchParams.append("cp", localStorage.getItem('campaign'));
     myUrlWithParams.searchParams.append("utm_source", localStorage.getItem('utm_source'));
