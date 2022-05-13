@@ -19,7 +19,7 @@ try {
 }
 
 const getStarted = function() {
-    const myUrlWithParams = new URL('https://mindtrails.virginia.edu/spanish/eligibility/');
+    const myUrlWithParams = new URL('https://mindtrails.virginia.edu/public/spanish/eligibility/');
 
     myUrlWithParams.searchParams.append("cp", localStorage.getItem('campaign'));
     myUrlWithParams.searchParams.append("utm_source", localStorage.getItem('utm_source'));
