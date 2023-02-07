@@ -18,14 +18,34 @@ try {
     console.log("Issues with Parsing URL Parameter's - " + err);
 }
 
-const getStarted = function() {
-    const myUrlWithParams = new URL('https://mindtrails.virginia.edu/spanish/public/eligibility/');
+
+
+const goToProject = function(ending, site, lang) {
+    let project = site;
+    if(!project) {
+        if(getPage().indexOf('_es') > -1) {
+            project = 'spanish';
+        } else {
+            project = 'calm';
+        }
+    }
+    lang = lang || (project == 'spanish' ? 'es' : 'en');
+    const myUrlWithParams = new URL('https://mindtrails.virginia.edu/'+project+ending);
 
     myUrlWithParams.searchParams.append("cp", localStorage.getItem('campaign'));
     myUrlWithParams.searchParams.append("utm_source", localStorage.getItem('utm_source'));
     myUrlWithParams.searchParams.append("utm_medium", localStorage.getItem('utm_medium'));
     myUrlWithParams.searchParams.append("utm_content", localStorage.getItem('utm_content'));
+    myUrlWithParams.searchParams.append('lang', lang);
 
     console.log(myUrlWithParams.href);
     location.href = myUrlWithParams.href
 }
+
+const goToLogin = function(site, lang) {
+    goToProject('/login', site, lang);
+}
+const getStarted = function(site, lang) {
+    goToProject('/public/eligibility/', site, lang);
+}
+
