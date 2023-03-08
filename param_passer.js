@@ -31,8 +31,11 @@ const goToProject = function(ending, site, lang) {
     }
     lang = lang || (project == 'spanish' ? 'es' : 'en');
     const myUrlWithParams = new URL('https://mindtrails.virginia.edu/'+project+ending);
-
-    myUrlWithParams.searchParams.append("cp", localStorage.getItem('campaign'));
+    if(project == 'spanish') {
+        myUrlWithParams.searchParams.append("cp", "esd");
+    }else {
+        myUrlWithParams.searchParams.append("cp", localStorage.getItem('campaign'));
+    }
     myUrlWithParams.searchParams.append("utm_source", localStorage.getItem('utm_source'));
     myUrlWithParams.searchParams.append("utm_medium", localStorage.getItem('utm_medium'));
     myUrlWithParams.searchParams.append("utm_content", localStorage.getItem('utm_content'));
