@@ -32,7 +32,7 @@ const goToProject = function(ending, site, lang) {
     lang = lang || (project == 'spanish' ? 'es' : 'en');
     const myUrlWithParams = new URL('https://mindtrails.virginia.edu/'+project+ending);
     if(project == 'spanish') {
-        myUrlWithParams.searchParams.append("cp", "esd");
+        myUrlWithParams.searchParams.append("cp", "esdtraspo");
     }else {
         myUrlWithParams.searchParams.append("cp", localStorage.getItem('campaign'));
     }
